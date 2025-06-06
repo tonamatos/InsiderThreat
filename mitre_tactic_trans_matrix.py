@@ -1,4 +1,4 @@
-mitre_tactics = [
+MITRE_TACTICS = [
   "Initial Access", "Execution", "Persistence", "Privilege Escalation",
   "Defense Evasion", "Credential Access", "Discovery", "Lateral Movement",
   "Collection", "Command and Control", "Exfiltration", "Impact"
@@ -22,8 +22,8 @@ transition_probs = [
 
 mitre_transition = {
   from_tactic: {
-    to_tactic: transition_probs[i][j] for j, to_tactic in enumerate(mitre_tactics)
-  } for i, from_tactic in enumerate(mitre_tactics)
+    to_tactic: transition_probs[i][j] for j, to_tactic in enumerate(MITRE_TACTICS)
+  } for i, from_tactic in enumerate(MITRE_TACTICS)
 }
 
 if __name__=="__main__":

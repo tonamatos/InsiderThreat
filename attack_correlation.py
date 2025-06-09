@@ -13,6 +13,28 @@ EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access", "Credential Acc
                        "Exfiltration"       : ["Exfiltration"],
                        "Defense Evasion"    : ["Defense Evasion"]}
 
+def build_event_to_ips_map(G):
+  '''
+  Returns a dictionary that links event nodes in G
+  to the set of all IPs addresses of hosts connected to the
+  event in G.
+  '''
+  event_to_ips = {}
+
+  for node in G.nodes:
+    if G.nodes[node].get("node_type") == "event":
+      # Collect IPs from all Host entities linked to this event
+      ips = set()
+      for neighbor in G.neighbors(node):
+        nbr_data = G.nodes[neighbor]
+        if nbr_data.get("node_type") == "entity" and nbr_data.get("type") == "Host":
+          ip = nbr_data.get("properties", {}).get("ip_address")
+          if ip:
+            ips.add(ip)
+      event_to_ips[node] = ips
+
+  return event_to_ips
+
 def alert_correlation_measure(vertex1, vertex2, data: dict, event_to_ips: dict) -> float:
   '''
   Args are nodes of a graph that correspond to events.
@@ -37,25 +59,28 @@ def alert_correlation_measure(vertex1, vertex2, data: dict, event_to_ips: dict) 
 
   return max(set_T_KC) * max(set_C_IP)
 
-def attack_correlation(G: nx.Graph, data: dict, event_to_ips: dict) -> nx.Graph:
+def attack_correlation(G: nx.Graph, data: dict) -> nx.Graph:
+  '''
+  Returns the attack correlation graph corresponding to G, the graph with
+  nodes consisting of all events and entities, as produces by the data_loader
+  '''
   event_nodes = [n for n, d in G.nodes(data=True) if d.get("node_type") == "event"]
   event_lookup = {event["id"]: event for event in data["events"]}
 
   attack_correlation_graph = nx.Graph()
   attack_correlation_graph.add_nodes_from((n, G.nodes[n]) for n in event_nodes)
 
-  for u, v in combinations(event_nodes, 2):
+  for u, v in product(event_nodes, repeat=2):
     # Temporal logic:
     time_u = datetime.fromisoformat(event_lookup[u]["timestamp"])
     time_v = datetime.fromisoformat(event_lookup[v]["timestamp"])
+
+    if time_u >= time_v:
+      continue
     
-    if time_u < time_v:
-      score = alert_correlation_measure(u, v, data, event_to_ips)
-      if score > 0.4:
-        attack_correlation_graph.add_edge(u, v, weight=score)
-    elif time_v < time_u:
-      score = alert_correlation_measure(v, u, data, event_to_ips)
-      if score > 0.4:
-        attack_correlation_graph.add_edge(v, u, weight=score)
+    event_to_ips = build_event_to_ips_map(G)
+    score = alert_correlation_measure(u, v, data, event_to_ips)
+    if score > 0.4:
+      attack_correlation_graph.add_edge(u, v, weight=score)
 
   return attack_correlation_graph

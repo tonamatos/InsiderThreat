@@ -8,7 +8,6 @@ def save_graph(graph: nx.Graph, filename: str) -> None:
   with open(filename, "wb") as f:
     pickle.dump(graph, f)
 
-
 def load_graph(filename: str) -> nx.Graph:
   """
   Loads a NetworkX graph object from a pickle file.

@@ -161,3 +161,5 @@ cython_debug/
 
 security_data_assignment.json
 test.ipynb
+cached_graphs/*
+!cached_graphs/.gitkeep

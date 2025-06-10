@@ -1,11 +1,12 @@
 # Largely based off of https://jessicastringham.net/2019/01/09/sum-product-message-passing/
 import numpy as np
 from typing import List
-from mitre_tactic_trans_matrix import mitre_transition
+from mitre_tactic_trans_matrix import MITRE_TRANSITION
 from data_loader import data_load_into_graph as load
+from attack_correlation import EVENT_TYPE_TO_MITRE
 
 FALSE_INDICATION = 0.2
-MAX_ITER = 500
+MAX_ITER = 30
 
 class Node:
     """
@@ -71,7 +72,7 @@ class Messages:
         incoming_messages = [
             self.factor_to_variable_message(factor2, variable)
             for factor2 in variable.neighbours
-            if factor2 is not factor
+            if factor2.name != factor.name
         ]
 
         # base case is also handled here
@@ -94,6 +95,7 @@ class Messages:
         
         # pointwise product along appropriate axis
         incoming_message = self.variable_to_factor_message(factor.neighbours[1 - var_index], factor) # should be a 1x2 vector
+        assert incoming_message.shape == (2,)
         factor_distr *= np.stack((incoming_message, incoming_message), axis=var_index)
 
         return np.squeeze(np.sum(factor_distr, axis=1 - var_index))
@@ -101,7 +103,8 @@ class Messages:
     def variable_to_factor_message(self, variable: VariableNode, factor: FactorNode):
         self.i += 1
         if self.i >= MAX_ITER:
-            return 1
+            return np.array([1., 1.])
+        
         message_name = (variable.name, factor.name)
         if message_name not in self.messages:
             self.messages[message_name] = self._variable_to_factor_message(variable, factor)
@@ -110,6 +113,8 @@ class Messages:
     def factor_to_variable_message(self, factor: FactorNode, variable: VariableNode):
         self.i += 1
         if self.i >= MAX_ITER:
+            if len(factor.neighbours) == 1:
+                return factor.distr
             var_index = factor.neighbours.index(variable)
             return np.squeeze(np.sum(factor.distr, axis=1 - var_index))
         message_name = (factor.name, variable.name)
@@ -137,7 +142,6 @@ class Messages:
         marginals_dict = dict()
         for variable in fg.variables:
             marginals_dict[variable] = self.marginal(fg.variables[variable])
-        # marginals_dict["Collection"] = self.marginal(fg.variables["Collection"])
         return marginals_dict
 
 
@@ -150,7 +154,7 @@ class FactorGraph:
                    Important: alert['type'] is assumed to be a MITRE tactic
     """
     def __init__(self, alerts: List):
-        tactics = list([alert['type'] for alert in alerts]) # TODO: Need to be translated to MITRE tactics
+        tactics = list([EVENT_TYPE_TO_MITRE[alert['type']][0] for alert in alerts]) # TODO: Need to be translated to MITRE tactics
         self.variables = dict() # Use a dict to easily find the variable nodes for a given tactic
         self.factors = []
         
@@ -162,7 +166,7 @@ class FactorGraph:
         # Constructing single-alert factor nodes
         for alert in alerts:
             fact_node = FactorNode(alert['id'])
-            tactic = alert['type']
+            tactic = EVENT_TYPE_TO_MITRE[alert['type']][0]
             fact_node.add_neighbour(self.variables[tactic])
             self.variables[tactic].add_neighbour(fact_node)
 
@@ -183,13 +187,13 @@ class FactorGraph:
                 ta_node.add_neighbour(fact_node)
                 tb_node.add_neighbour(fact_node)
 
-                mu = mitre_transition[tactic_a][tactic_b]
+                mu = MITRE_TRANSITION[tactic_a][tactic_b]
                 fact_node.set_distr(np.array([[FALSE_INDICATION, 1 - mu], [1 - mu, mu]]))
 
 
 if __name__ == "__main__":
     G, data = load()
-    alerts = data['events'][:3]
+    alerts = data['events'][:10]
     fg = FactorGraph(alerts)
 
     m = Messages()

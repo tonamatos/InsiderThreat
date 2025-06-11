@@ -1,25 +1,25 @@
 from config import MARGINAL_THRESHOLDS
 
-def compute_attack_scores(file_name):
-    attack_scores = {}
+def compute_attack_scores(file_name="data/scores.txt"):
+    attack_scores = dict()
     
     with open(file_name, 'rt') as attack_file:
 
         #Read each line of the file as a separate attack
         for line in attack_file:
-            attack = line.split(',')
-            score = 0
+            attack = line.strip().split(',')
+            count = 0
 
             #Score the attack based on its marginals 
-            for i in range(1, len(attack), 2):
+            for i in range(1, len(attack) - 2, 2):
                 if float(attack[i + 1]) > MARGINAL_THRESHOLDS[attack[i]]:
-                    score +=1
+                    count +=1
             
-            attack_scores.update({attack[0] : score})
+            attack_scores[attack[0]] = {"count": count, "score": attack[-1]}
 
     return attack_scores
 
-if __name__=="__main__":
+if __name__ == "__main__":
     # Example of usage
 
-    print(compute_attack_scores('test.txt'))
+    print(compute_attack_scores())

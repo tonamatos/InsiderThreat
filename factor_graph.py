@@ -6,7 +6,7 @@ import numpy as np
 
 # our files
 from data_loader import data_load_into_graph as load
-from config import EVENT_TYPE_TO_MITRE, TRANSITION_PROB, MITRE_TRANSITION
+from config import EVENT_TYPE_TO_MITRE, MITRE_TRANSITION
 
 # Keep constants relevant to factor graphs specifically in this file
 FALSE_INDICATION = 0.2 

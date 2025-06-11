@@ -1,5 +1,5 @@
 raise ValueError(
-    "This module is deprecated and should no longer be used. "
+    "This module is deprecated and should no longer be used."
     "Please update your code to use 'config.py' instead."
 )
 

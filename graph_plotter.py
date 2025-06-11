@@ -1,3 +1,8 @@
+raise ValueError(
+    "This module is deprecated and should no longer be used."
+    "Please update your code to use 'utils.py' instead."
+)
+
 import networkx as nx
 import matplotlib.pyplot as plt
 

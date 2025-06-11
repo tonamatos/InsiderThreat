@@ -1,6 +1,6 @@
-from config import MARGINAL_THRESHOLDS
+from config import MARGINAL_THRESHOLDS, DEFAULT_SCORES_PATH
 
-def compute_attack_scores(file_name="data/scores.txt"):
+def compute_attack_scores(file_name=DEFAULT_SCORES_PATH):
     attack_scores = dict()
     
     with open(file_name, 'rt') as attack_file:

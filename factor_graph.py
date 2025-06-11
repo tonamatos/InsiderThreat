@@ -6,10 +6,8 @@ import numpy as np
 
 # our files
 from data_loader import data_load_into_graph as load
-from config import EVENT_TYPE_TO_MITRE, MITRE_TRANSITION
+from config import EVENT_TYPE_TO_MITRE, MITRE_TRANSITION, FALSE_INDICATION
 
-# Keep constants relevant to factor graphs specifically in this file
-FALSE_INDICATION = 0.2 
 MAX_ITER = 10 # This might not be necessary after the temporal logic has been added
 
 class Node:
@@ -217,7 +215,7 @@ class FactorGraph:
         score = 0
         for alert in self.alerts:
             score += alert['severity'] * self.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1]
-        self.score = score / (10 * len(alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
+        self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
         return self.score
     
     def export_scores(self, incident_name: str, filename: str ="data/scores.txt"):

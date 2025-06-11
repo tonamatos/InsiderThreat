@@ -1,9 +1,11 @@
 # Largely based off of https://jessicastringham.net/2019/01/09/sum-product-message-passing/
+from __future__ import annotations
 import numpy as np
-from typing import List
+from typing import List, Tuple, Dict
 from mitre_tactic_trans_matrix import MITRE_TRANSITION
 from data_loader import data_load_into_graph as load
 from attack_correlation import EVENT_TYPE_TO_MITRE
+from datetime import datetime
 
 FALSE_INDICATION = 0.2
 MAX_ITER = 10
@@ -15,11 +17,11 @@ class Node:
     Attributes:
     name (str): Name of node
     """
-    def __init__(self, name: str):
+    def __init__(self, name: str | Tuple[str]):
         self.name = name
         self.neighbours = []
 
-    def is_valid_neighbour(self, node) -> bool:
+    def is_valid_neighbour(self, node: Node) -> bool:
         raise NotImplementedError
 
     def add_neighbour(self, node):
@@ -44,7 +46,7 @@ class FactorNode(Node):
     distr (np.ndarray): Probability distribution for this node. Should only be 1x2 or 2x2 matrices in our case
     """
     # Any factor node should have at most 2 neighbours
-    def is_valid_neighbour(self, node):
+    def is_valid_neighbour(self, node: Node):
         return isinstance(node, VariableNode)
     
     def __init__(self, name:str, distr: np.ndarray=None):
@@ -117,7 +119,6 @@ class Messages:
         np.ndarray: array of shape (2,) corresponding to probabilty distribution of variable being active or inactive
         """
         self.i = 0
-        self.messages = {}
         unnorm_p = np.prod(
             [self.factor_to_variable_message(neighbour, variable) for neighbour in variable.neighbours],
             axis = 0
@@ -143,7 +144,8 @@ class FactorGraph:
     def __init__(self, alerts: List):
         tactics = list([EVENT_TYPE_TO_MITRE[alert['type']][0] for alert in alerts]) # TODO: Need to be translated to MITRE tactics
         self.variables = dict() # Use a dict to easily find the variable nodes for a given tactic
-        self.factors = []
+        self.factors = dict()
+        self.marginals = None
         
         # Constructing variable nodes for the tactics
         for tactic in tactics:
@@ -151,31 +153,55 @@ class FactorGraph:
             self.variables[tactic] = var_node
         
         # Constructing single-alert factor nodes
-        for alert in alerts:
-            fact_node = FactorNode(alert['id'])
-            tactic = EVENT_TYPE_TO_MITRE[alert['type']][0]
+        for alert_a in alerts:
+            # create factor node for alert_a
+            fact_node = FactorNode(alert_a['id'])
+            tactic = EVENT_TYPE_TO_MITRE[alert_a['type']][0]
             fact_node.add_neighbour(self.variables[tactic])
             self.variables[tactic].add_neighbour(fact_node)
 
-            alert_score = alert['severity'] / 10.0
+            alert_score = alert_a['severity'] / 10.0
             fact_node.set_distr(np.array([1 - alert_score, alert_score]))
 
-        # Constructing the pairwise factor nodes
-        for tactic_a in tactics:
-            for tactic_b in tactics:
-                if tactic_a == tactic_b:
+            # create pairwise factor nodes for tactics
+            # Need to account for temporal data
+            alert_a_time = datetime.fromisoformat(alert_a['timestamp'])
+            alert_a_tactic = EVENT_TYPE_TO_MITRE[alert_a['type']][0]
+            for alert_b in alerts:
+                alert_b_tactic = EVENT_TYPE_TO_MITRE[alert_b['type']][0]
+                if alert_a_tactic == alert_b_tactic: # Only connect distinct tactics
                     continue
-                fact_node = FactorNode((tactic_a, tactic_b))
-                ta_node = self.variables[tactic_a]
-                tb_node = self.variables[tactic_b]
+                
+                alert_b_time = datetime.fromisoformat(alert_b['timestamp'])
+                factor_node_name = (alert_a_tactic, alert_b_tactic) # node name encodes the temporal data
+                if alert_b_time < alert_a_time:
+                    factor_node_name = (alert_b_tactic, alert_a_tactic)
+                
+                if factor_node_name in self.factors:
+                    continue
+
+                # Don't already have this factor node, need to create it
+                fact_node = FactorNode(factor_node_name)
+                mu = MITRE_TRANSITION[factor_node_name[0]][factor_node_name[1]] # TODO: Change mu so it takes into account temporal data
+                fact_node.set_distr(np.array([[FALSE_INDICATION, 1 - mu], [1 - mu, mu]]))
+
+                # add the edges
+                ta_node = self.variables[alert_a_tactic]
+                tb_node = self.variables[alert_b_tactic]
                 
                 fact_node.add_neighbour(ta_node)
                 fact_node.add_neighbour(tb_node)
                 ta_node.add_neighbour(fact_node)
                 tb_node.add_neighbour(fact_node)
 
-                mu = MITRE_TRANSITION[tactic_a][tactic_b] # TODO: Change mu so it takes into account temporal data
-                fact_node.set_distr(np.array([[FALSE_INDICATION, 1 - mu], [1 - mu, mu]]))
+                # Add factor node to collection of nodes
+                self.factors[factor_node_name] = fact_node
+    
+    def run_inference(self) -> Dict[str, np.ndarray]:
+        """ Sets the marginals and returns it """
+        m = Messages()
+        self.marginals = m.marginals(self)
+        return self.marginals
 
 
 if __name__ == "__main__":
@@ -183,5 +209,4 @@ if __name__ == "__main__":
     alerts = data['events'][:10]
     fg = FactorGraph(alerts)
 
-    m = Messages()
-    print(m.marginals(fg))
+    print(fg.run_inference())

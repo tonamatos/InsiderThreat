@@ -5,6 +5,7 @@ from config import MITRE_TRANSITION
 from data_loader import data_load_into_graph as load
 from attack_correlation import EVENT_TYPE_TO_MITRE
 from datetime import datetime
+import numpy as np
 
 # our files
 from data_loader import data_load_into_graph as load

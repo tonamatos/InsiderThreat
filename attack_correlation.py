@@ -1,24 +1,7 @@
 import networkx as nx
 from itertools import product
 from datetime import datetime
-from config import CORRELATION_THRESHOLD, MITRE_TRANSITION
-
-# This dict may be defined by reading the description using an LLM,
-# currently aboove my paygrade!
-EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access", "Credential Access"],
-                       "Privilege Operation": ["Privilege Escalation", "Execution"],
-                       "Data Access"        : ["Collection", "Discovery"],
-                       "Exfiltration"       : ["Exfiltration"],
-                       "Defense Evasion"    : ["Defense Evasion"]}
-
-'''
-TEMPORARY SIMPLIFICATION BELOW FOR TESTING (should work well enough anyways though)
-'''
-EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access"],
-                       "Privilege Operation": ["Privilege Escalation"],
-                       "Data Access"        : ["Collection"],
-                       "Exfiltration"       : ["Exfiltration"],
-                       "Defense Evasion"    : ["Defense Evasion"]}
+from config import CORRELATION_THRESHOLD, MITRE_TRANSITION, EVENT_TYPE_TO_MITRE
 
 def build_event_to_ips_map(G):
   '''

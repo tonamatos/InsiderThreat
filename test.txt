@@ -1,0 +1,2 @@
+test_attack_1,Exfiltration,0.95,Collection,0.80,Initial Access,0.99
+test_attack_2,Exfiltration,0.88,Collection,0.95,Initial Access,0.82

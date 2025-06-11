@@ -1,11 +1,4 @@
-DEFAULT_FILE_NAME = 'test.txt'
-MARGINAL_THRESHOLDS = {
-    "Initial Access" : 0.9,
-    "Privilege Escalation" : 0.9,
-    "Collection" : 0.9,
-    "Exfiltration" : 0.9,
-    "Defense Evasion" : 0.9
-}
+from config import MARGINAL_THRESHOLDS
 
 def compute_attack_scores(file):
     attack_scores = {}
@@ -25,4 +18,7 @@ def compute_attack_scores(file):
 
     return attack_scores
 
-print(compute_attack_scores(DEFAULT_FILE_NAME))
+if __name__=="__main__":
+  # Example of usage
+
+  print(compute_attack_scores('test.txt'))

@@ -9,6 +9,12 @@ MITRE_TACTICS = [
   "Collection", "Command and Control", "Exfiltration", "Impact"
 ]
 
+EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access"],
+                       "Privilege Operation": ["Privilege Escalation"],
+                       "Data Access"        : ["Collection"],
+                       "Exfiltration"       : ["Exfiltration"],
+                       "Defense Evasion"    : ["Defense Evasion"]}
+
 # Copied Table 1 from page 6 of https://arxiv.org/pdf/2101.02573
 with open('prob_matrix.json', 'r') as f: TRANSITION_PROB = json.load(f)
 

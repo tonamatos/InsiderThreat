@@ -1,14 +1,18 @@
 # Largely based off of https://jessicastringham.net/2019/01/09/sum-product-message-passing/
 from __future__ import annotations
-import numpy as np
 from typing import List, Tuple, Dict
 from config import MITRE_TRANSITION
 from data_loader import data_load_into_graph as load
 from attack_correlation import EVENT_TYPE_TO_MITRE
 from datetime import datetime
 
-FALSE_INDICATION = 0.2
-MAX_ITER = 10
+# our files
+from data_loader import data_load_into_graph as load
+from config import EVENT_TYPE_TO_MITRE, TRANSITION_PROB
+
+# Keep constants relevant to factor graphs specifically in this file
+FALSE_INDICATION = 0.2 
+MAX_ITER = 10 # This might not be necessary after the temporal logic has been added
 
 class Node:
     """
@@ -182,7 +186,7 @@ class FactorGraph:
 
                 # Don't already have this factor node, need to create it
                 fact_node = FactorNode(factor_node_name)
-                mu = MITRE_TRANSITION[factor_node_name[0]][factor_node_name[1]] # TODO: Change mu so it takes into account temporal data
+                mu = TRANSITION_PROB[factor_node_name[0]][factor_node_name[1]] # TODO: Change mu so it takes into account temporal data
                 fact_node.set_distr(np.array([[FALSE_INDICATION, 1 - mu], [1 - mu, mu]]))
 
                 # add the edges

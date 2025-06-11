@@ -1,3 +1,8 @@
+raise ValueError(
+    "This module is deprecated and should no longer be used. "
+    "Please update your code to use 'config.py' instead."
+)
+
 MITRE_TACTICS = [
   "Initial Access", "Execution", "Persistence", "Privilege Escalation",
   "Defense Evasion", "Credential Access", "Discovery", "Lateral Movement",

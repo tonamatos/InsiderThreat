@@ -2,7 +2,7 @@
 from __future__ import annotations
 import numpy as np
 from typing import List, Tuple, Dict
-from mitre_tactic_trans_matrix import MITRE_TRANSITION
+from config import MITRE_TRANSITION
 from data_loader import data_load_into_graph as load
 from attack_correlation import EVENT_TYPE_TO_MITRE
 from datetime import datetime

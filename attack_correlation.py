@@ -1,9 +1,7 @@
-from mitre_tactic_trans_matrix import MITRE_TRANSITION
 import networkx as nx
-from itertools import combinations, product
+from itertools import product
 from datetime import datetime
-
-THRESHOLD = 0.4
+from config import CORRELATION_THRESHOLD, MITRE_TRANSITION
 
 # This dict may be defined by reading the description using an LLM,
 # currently aboove my paygrade!
@@ -87,7 +85,7 @@ def attack_correlation(G: nx.Graph, data: dict) -> nx.DiGraph:
 
     if time_u < time_v:
       score = alert_correlation_measure(u, v, data, event_to_ips)
-      if score > 0.4:
+      if score > CORRELATION_THRESHOLD:
         attack_correlation_graph.add_edge(u, v, weight=score)
 
   return attack_correlation_graph

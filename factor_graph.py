@@ -6,10 +6,8 @@ import numpy as np
 
 # our files
 from data_loader import data_load_into_graph as load
-from config import EVENT_TYPE_TO_MITRE, MITRE_TRANSITION
+from config import EVENT_TYPE_TO_MITRE, MITRE_TRANSITION, FALSE_INDICATION
 
-# Keep constants relevant to factor graphs specifically in this file
-FALSE_INDICATION = 0.2 
 MAX_ITER = 10 # This might not be necessary after the temporal logic has been added
 
 class Node:
@@ -145,10 +143,14 @@ class FactorGraph:
     """
     def __init__(self, alerts: List):
         tactics = list([EVENT_TYPE_TO_MITRE[alert['type']][0] for alert in alerts]) # TODO: Need to be translated to MITRE tactics
+        
+        self.alerts = alerts
         self.variables = dict() # Use a dict to easily find the variable nodes for a given tactic
         self.factors = dict()
-        self.marginals = None
         
+        self.marginals = None
+        self.score = None
+
         # Constructing variable nodes for the tactics
         for tactic in tactics:
             var_node = VariableNode(tactic)
@@ -205,15 +207,31 @@ class FactorGraph:
         self.marginals = m.marginals(self)
         return self.marginals
     
-    def export_marginals(self, incident_name: str, filename: str ="data/scores.txt"):
+    def compute_score(self):
+        """ Computes score as a weighted sum of the severity scores with weights given by the marginals. """
+        if not self.marginals:
+            raise ValueError("Marginals have not been computed yet.")
+        
+        score = 0
+        for alert in self.alerts:
+            score += alert['severity'] * self.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1]
+        self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
+        return self.score
+    
+    def export_scores(self, incident_name: str, filename: str ="data/scores.txt"):
         """ Saves the scores to filename.
         Adds a newline to filename if it exists and creates filenames if not.
+        This function only handles the export part. It should not be doing any computations.
         """
         if not self.marginals:
             raise ValueError("Marginals have not been computed yet.")
+        if not self.score:
+            raise ValueError("Score has not been computed yet.")
+        
         with open(filename, mode='a') as f:
-            score_output = [f'{tactic},{self.marginals[tactic][1]}' for tactic in self.marginals]
-            f.write(incident_name + ',' + ','.join(score_output) + '\n')
+            marginal_output = [f'{tactic},{self.marginals[tactic][1]}' for tactic in self.marginals]
+            marginal_output = ','.join(marginal_output)
+            f.write(f"{incident_name},{marginal_output},Score,{self.score}\n")
 
 
 if __name__ == "__main__":
@@ -222,4 +240,5 @@ if __name__ == "__main__":
     fg = FactorGraph(alerts)
 
     print(fg.run_inference())
-    fg.export_marginals("incident1")
+    print(fg.compute_score())
+    fg.export_scores("incident1")

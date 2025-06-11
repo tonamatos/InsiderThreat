@@ -1,7 +1,7 @@
 # Largely based off of https://jessicastringham.net/2019/01/09/sum-product-message-passing/
 import numpy as np
 from typing import List
-from mitre_tactic_trans_matrix import mitre_transition
+from mitre_tactic_trans_matrix import MITRE_TRANSITION
 from data_loader import data_load_into_graph as load
 
 FALSE_INDICATION = 0.2
@@ -183,7 +183,7 @@ class FactorGraph:
                 ta_node.add_neighbour(fact_node)
                 tb_node.add_neighbour(fact_node)
 
-                mu = mitre_transition[tactic_a][tactic_b]
+                mu = MITRE_TRANSITION[tactic_a][tactic_b]
                 fact_node.set_distr(np.array([[FALSE_INDICATION, 1 - mu], [1 - mu, mu]]))
 
 

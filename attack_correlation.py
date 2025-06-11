@@ -13,6 +13,15 @@ EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access", "Credential Acc
                        "Exfiltration"       : ["Exfiltration"],
                        "Defense Evasion"    : ["Defense Evasion"]}
 
+'''
+TEMPORARY SIMPLIFICATION BELOW FOR TESTING (should work well enough anyways though)
+'''
+EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access"],
+                       "Privilege Operation": ["Privilege Escalation"],
+                       "Data Access"        : ["Collection"],
+                       "Exfiltration"       : ["Exfiltration"],
+                       "Defense Evasion"    : ["Defense Evasion"]}
+
 def build_event_to_ips_map(G):
   '''
   Returns a dictionary that links event nodes in G

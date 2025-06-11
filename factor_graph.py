@@ -202,6 +202,16 @@ class FactorGraph:
         m = Messages()
         self.marginals = m.marginals(self)
         return self.marginals
+    
+    def export_marginals(self, incident_name: str, filename: str ="data/scores.txt"):
+        """ Saves the scores to filename.
+        Adds a newline to filename if it exists and creates filenames if not.
+        """
+        if not self.marginals:
+            raise ValueError("Marginals have not been computed yet.")
+        with open(filename, mode='a') as f:
+            score_output = [f'{tactic},{self.marginals[tactic][1]}' for tactic in self.marginals]
+            f.write(incident_name + ',' + ','.join(score_output) + '\n')
 
 
 if __name__ == "__main__":
@@ -210,3 +220,4 @@ if __name__ == "__main__":
     fg = FactorGraph(alerts)
 
     print(fg.run_inference())
+    fg.export_marginals("incident1")

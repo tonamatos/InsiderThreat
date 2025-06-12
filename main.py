@@ -47,7 +47,7 @@ for event_subgraph in all_event_subgraphs:
 
   # If you don't want 600+ images of a single node...
   if subgraph.number_of_edges() == 0:
-    continue
+    break # since after this they all have zero edges
 
   index = event_subgraph["Index"]
   save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"

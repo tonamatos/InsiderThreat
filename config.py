@@ -13,3 +13,6 @@ prob_matrix_file.close()
 marginal_thresholds_file = open('marginal_thresholds.json','r')
 MARGINAL_THRESHOLDS = json.load(marginal_thresholds_file)
 marginal_thresholds_file.close()
+
+MARGINAL_THRESHOLD_ADJUST_AMOUNT = 0.01
+PROB_MATRIX_ADJUST_AMOUNT = 0.01

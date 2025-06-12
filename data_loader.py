@@ -1,7 +1,8 @@
 import json
 import networkx as nx
+from config import DATA_FILEPATH
 
-def data_load_into_graph(filepath="security_data_assignment.json"):
+def data_load_into_graph(filepath=DATA_FILEPATH):
 
   with open(filepath) as f:
     data = json.load(f)

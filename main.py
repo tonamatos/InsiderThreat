@@ -28,12 +28,7 @@ for i, component in enumerate(components):
   subgraph = H.subgraph(component)
   alerts = [event for event in data['events'] if event['id'] in subgraph.nodes()]
   fg = FactorGraph(alerts)
-  m = Messages()
-  # v = fg.variables["Collection"]
-  # # print(m.marginal(v))
-  # # v = fg.variables["Credential Access"]
-  # # print(m.marginal(v))
-  marginals = m.marginals(fg)
+  marginals = fg.run_inference()
   event_subgraph = {"Factor graph": fg,
                     "Marginals"   : marginals,
                     "Index"       : i, # This index is sorted by subgraph size.

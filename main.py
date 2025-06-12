@@ -1,8 +1,9 @@
 from attack_correlation import *
 from data_loader import data_load_into_graph as load
-from utils import save_graph, load_graph
+from utils import save_graph, load_graph, plot_graph
 from factor_graph import *
 import os
+from config import IMAGES_DIRECTORY
 
 # STEP 1: Load data as a graph and a dictionary
 G, data = load()
@@ -40,3 +41,9 @@ for i, component in enumerate(components):
   all_event_subgraphs.append(event_subgraph)
 
 print("Processed", len(all_event_subgraphs), "subgraphs!")
+print("Creating images...")
+
+for event_subgraph in all_event_subgraphs:
+  save_path = IMAGES_DIRECTORY + f"event_subgraph_{event_subgraph["Index"]}.png"
+  subgraph = event_subgraph["Subgraph"]
+  plot_graph(subgraph, node_label="description", save_path=save_path)

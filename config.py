@@ -1,9 +1,10 @@
 import json
 
 CORRELATION_THRESHOLD = 0.4
-FALSE_INDICATION = 0.2 # used by factor graphs
-DATA_FILEPATH         = "security_data_assignment.json" # This file is gitignored
-DEFAULT_SCORES_PATH = "data/scores.txt"
+FALSE_INDICATION      = 0.2 # used by factor graphs
+DATA_FILEPATH         = "security_data_assignment.json" # File is gitignored
+DEFAULT_SCORES_PATH   = "data/scores.txt"
+IMAGES_DIRECTORY      = "graph_plots/"                  # Directory contents are gitignored
 
 MITRE_TACTICS = [
   "Initial Access", "Execution", "Persistence", "Privilege Escalation",

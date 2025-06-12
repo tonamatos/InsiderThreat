@@ -47,7 +47,7 @@ def alert_correlation_measure(vertex1, vertex2, data: dict, event_to_ips: dict) 
   shared_ips = ips1 & ips2  # set intersection
   set_C_IP = [1 if shared_ips else 0]
 
-  return max(set_T_KC) * max(set_C_IP)
+  return max(set_T_KC) * max(set_C_IP), shared_ips
 
 def attack_correlation(G: nx.Graph, data: dict) -> nx.DiGraph:
   '''
@@ -67,8 +67,9 @@ def attack_correlation(G: nx.Graph, data: dict) -> nx.DiGraph:
     time_v = datetime.fromisoformat(event_lookup[v]["timestamp"])
 
     if time_u < time_v:
-      score = alert_correlation_measure(u, v, data, event_to_ips)
+      score, shared_ips = alert_correlation_measure(u, v, data, event_to_ips)
       if score > CORRELATION_THRESHOLD:
-        attack_correlation_graph.add_edge(u, v, weight=score)
+        match_IP = ",".join(shared_ips)
+        attack_correlation_graph.add_edge(u, v, weight=score, match_IP=match_IP)
 
   return attack_correlation_graph

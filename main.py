@@ -1,19 +1,24 @@
 from attack_correlation import *
 from data_loader import data_load_into_graph as load
-from utils import save_graph, load_graph
+from utils import save_graph, load_graph, plot_graph
 from factor_graph import *
 import os
+from config import IMAGES_DIRECTORY
 
 # STEP 1: Load data as a graph and a dictionary
+print("Loading data...")
 G, data = load()
 
 # STEP 2: Compute attack correlation graph or load cache
+print("Finding attack correlation graph...")
 cache_path = "cached_graphs/attack_correlation_graph.pkl"
 if os.path.exists(cache_path):
   H = load_graph(cache_path)
+  print("Loaded cached attack correlation graph.")
 else:
   H = attack_correlation(G, data)
   save_graph(H, cache_path)
+  print("Cached graph not found. New attack correlation graph created and cached.")
 
 # STEP 3: Compute factor graphs and scoring for each connected component
 # Extract components
@@ -35,3 +40,17 @@ for i, component in enumerate(components):
   all_event_subgraphs.append(event_subgraph)
 
 print("Processed", len(all_event_subgraphs), "subgraphs!")
+print("Creating images...")
+
+for event_subgraph in all_event_subgraphs:
+  subgraph = event_subgraph["Subgraph"]
+
+  # If you don't want 600+ images of a single node...
+  if subgraph.number_of_edges() == 0:
+    break # since after this they all have zero edges
+
+  index = event_subgraph["Index"]
+  save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"
+  plot_graph(subgraph, node_label="description", save_path=save_path)
+
+print("Done creating images.")

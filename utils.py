@@ -1,6 +1,7 @@
 import pickle
 import networkx as nx
 import matplotlib.pyplot as plt
+import os
 
 def save_graph(graph: nx.Graph, filename: str) -> None:
   """
@@ -16,7 +17,7 @@ def load_graph(filename: str) -> nx.Graph:
   with open(filename, "rb") as f:
     return pickle.load(f)
 
-def plot_graph(subgraph: nx.Graph, node_label="description") -> None:
+def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> None:
 
   # Get node severities and scale them (e.g., severity 1–10 becomes size 300–1000)
   node_severities = nx.get_node_attributes(subgraph, "severity")
@@ -26,7 +27,7 @@ def plot_graph(subgraph: nx.Graph, node_label="description") -> None:
     for n in subgraph.nodes()
   ]
 
-  # Node labels: use event description
+  # Node labels: use event label (e.g. description or type)
   node_labels = {
       node: subgraph.nodes[node].get(node_label, "") 
       for node in subgraph.nodes
@@ -34,7 +35,7 @@ def plot_graph(subgraph: nx.Graph, node_label="description") -> None:
 
   # Edge widths scaled from weights
   raw_weights = [d.get("weight", 0) for _, _, d in subgraph.edges(data=True)]
-  min_w, max_w = min(raw_weights), max(raw_weights)
+  min_w, max_w = min(raw_weights + [1]), max(raw_weights + [0])
   edge_weights = [
     2 + 5 * ((w - min_w) / (max_w - min_w)) if max_w > min_w else 5
     for w in raw_weights
@@ -42,6 +43,13 @@ def plot_graph(subgraph: nx.Graph, node_label="description") -> None:
 
   plt.figure(figsize=(12, 8))
   pos = nx.circular_layout(subgraph)
+
+  edge_labels = {}
+  for u, v, d in subgraph.edges(data=True):
+    raw = d.get("match_IP", "")
+    if isinstance(raw, str):
+      ip_list = [ip.strip() for ip in raw.split(",") if ip.strip()]
+      edge_labels[(u, v)] = "\n".join(ip_list)  # Multiple lines
 
   nx.draw(
       subgraph, pos,
@@ -53,4 +61,11 @@ def plot_graph(subgraph: nx.Graph, node_label="description") -> None:
       width=edge_weights
   )
 
-  plt.show()
+  nx.draw_networkx_edge_labels(subgraph, pos, edge_labels=edge_labels, font_size=8)
+
+  if save_path:
+    os.makedirs(os.path.dirname(save_path), exist_ok=True)
+    plt.savefig(save_path, format="png")
+    plt.close()
+  else:
+    plt.show()

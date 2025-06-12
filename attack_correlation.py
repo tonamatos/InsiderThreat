@@ -69,7 +69,7 @@ def attack_correlation(G: nx.Graph, data: dict) -> nx.DiGraph:
     if time_u < time_v:
       score, shared_ips = alert_correlation_measure(u, v, data, event_to_ips)
       if score > CORRELATION_THRESHOLD:
-        match_IP = ", ".join(shared_ips)
+        match_IP = ",".join(shared_ips)
         attack_correlation_graph.add_edge(u, v, weight=score, match_IP=match_IP)
 
   return attack_correlation_graph

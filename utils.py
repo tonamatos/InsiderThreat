@@ -27,7 +27,7 @@ def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> 
     for n in subgraph.nodes()
   ]
 
-  # Node labels: use event description
+  # Node labels: use event label (e.g. description or type)
   node_labels = {
       node: subgraph.nodes[node].get(node_label, "") 
       for node in subgraph.nodes
@@ -35,29 +35,33 @@ def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> 
 
   # Edge widths scaled from weights
   raw_weights = [d.get("weight", 0) for _, _, d in subgraph.edges(data=True)]
-  min_w, max_w = min(raw_weights), max(raw_weights)
+  min_w, max_w = min(raw_weights + [1]), max(raw_weights + [0])
   edge_weights = [
     2 + 5 * ((w - min_w) / (max_w - min_w)) if max_w > min_w else 5
     for w in raw_weights
   ]
 
   plt.figure(figsize=(12, 8))
-  pos = nx.spring_layout(subgraph)
+  pos = nx.circular_layout(subgraph)
 
-  edge_labels = {
-    (u, v): d.get("match_IP", "N/A").split(", ")  # Split in case it's a comma-separated string
-    for u, v, d in subgraph.edges(data=True)}
+  edge_labels = {}
+  for u, v, d in subgraph.edges(data=True):
+    raw = d.get("match_IP", "")
+    if isinstance(raw, str):
+      ip_list = [ip.strip() for ip in raw.split(",") if ip.strip()]
+      edge_labels[(u, v)] = "\n".join(ip_list)  # Multiple lines
 
   nx.draw(
       subgraph, pos,
       labels=node_labels,
-      edge_labels=edge_labels,
       with_labels=True,
       node_size=node_sizes,
       node_color='lightblue',
       edge_color='gray',
       width=edge_weights
   )
+
+  nx.draw_networkx_edge_labels(subgraph, pos, edge_labels=edge_labels, font_size=8)
 
   if save_path:
     os.makedirs(os.path.dirname(save_path), exist_ok=True)

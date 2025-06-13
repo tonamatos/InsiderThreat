@@ -1,9 +1,11 @@
+import os
+
 from attack_correlation import *
 from data_loader import data_load_into_graph as load
 from utils import save_graph, load_graph, plot_graph
 from factor_graph import *
-import os
 from config import IMAGES_DIRECTORY
+from attack_scoring import ScoreCalculator
 
 # STEP 1: Load data as a graph and a dictionary
 print("Loading data...")
@@ -33,8 +35,11 @@ for i, component in enumerate(components):
   alerts = [event for event in data['events'] if event['id'] in subgraph.nodes()]
   fg = FactorGraph(alerts)
   marginals = fg.run_inference()
+  sc = ScoreCalculator(alerts, fg)
+  score = sc.compute_weighted_score()
   event_subgraph = {"Factor graph": fg,
                     "Marginals"   : marginals,
+                    "Score"       : score,
                     "Index"       : i, # This index is sorted by subgraph size.
                     "Subgraph"    : subgraph}
   all_event_subgraphs.append(event_subgraph)

@@ -1,10 +1,11 @@
 import os
+import json
 
 from attack_correlation import *
 from data_loader import data_load_into_graph as load
 from utils import save_graph, load_graph, plot_graph
 from factor_graph import *
-from config import IMAGES_DIRECTORY
+from config import IMAGES_DIRECTORY, DEFAULT_SCORES_PATH_JSON
 from attack_scoring import ScoreCalculator
 
 # STEP 1: Load data as a graph and a dictionary
@@ -36,7 +37,9 @@ for i, component in enumerate(components):
   fg = FactorGraph(alerts)
   marginals = fg.run_inference()
   sc = ScoreCalculator(alerts, fg)
-  score = sc.compute_weighted_score()
+  score = sc.compute_weighted_score() # this can be exported to a txt or json file if we like
+  # sc.export_scores_txt(f"incident{i}")
+  # sc.export_scores_json(f"incident{i}")
   event_subgraph = {"Factor graph": fg,
                     "Marginals"   : marginals,
                     "Score"       : score,
@@ -44,18 +47,20 @@ for i, component in enumerate(components):
                     "Subgraph"    : subgraph}
   all_event_subgraphs.append(event_subgraph)
 
-print("Processed", len(all_event_subgraphs), "subgraphs!")
-print("Creating images...")
+all_event_subgraphs.sort(key=lambda x: x["Score"], reverse=True)
 
-for event_subgraph in all_event_subgraphs:
-  subgraph = event_subgraph["Subgraph"]
+with open(DEFAULT_SCORES_PATH_JSON, "w") as file:
+  json.dump(all_event_subgraphs, file, indent=4)
 
-  # If you don't want 600+ images of a single node...
-  if subgraph.number_of_edges() == 0:
-    break # since after this they all have zero edges
+# for event_subgraph in all_event_subgraphs:
+#   subgraph = event_subgraph["Subgraph"]
 
-  index = event_subgraph["Index"]
-  save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"
-  plot_graph(subgraph, node_label="description", save_path=save_path)
+#   # If you don't want 600+ images of a single node...
+#   if subgraph.number_of_edges() == 0:
+#     break # since after this they all have zero edges
 
-print("Done creating images.")
+#   index = event_subgraph["Index"]
+#   save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"
+#   plot_graph(subgraph, node_label="description", save_path=save_path)
+
+# print("Done creating images.")

@@ -20,6 +20,10 @@ class ScoreCalculator:
         if not self.fg.marginals:
             raise ValueError("Marginals have not been computed yet.")
         
+        # If only one alert then use alert severity
+        if len(self.alerts) == 1:
+            return self.alerts[0]['severity'] / 10.0
+        
         score = 0
         for alert in self.alerts:
             score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1] * WEIGHT_PARAMETERS[EVENT_TYPE_TO_MITRE[alert['type']][0]]

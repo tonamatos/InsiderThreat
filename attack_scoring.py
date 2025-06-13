@@ -26,9 +26,9 @@ class ScoreCalculator:
         
         score = 0
         for alert in self.alerts:
-            score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1] * WEIGHT_PARAMETERS[EVENT_TYPE_TO_MITRE[alert['type']][0]]
+            score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]] * WEIGHT_PARAMETERS[EVENT_TYPE_TO_MITRE[alert['type']][0]]
         self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
-        return self.score
+        return float(self.score)
     
     def check_computations(self):
         """ Raises ValueError if scores, marginals, etc. have not been computed. """
@@ -45,14 +45,14 @@ class ScoreCalculator:
         self.check_computations()
 
         with open(filename, mode='a') as file:
-            marginal_output = [f"{tactic},{self.fg.marginals[tactic][1]}" for tactic in self.fg.marginals]
+            marginal_output = [f"{tactic},{self.fg.marginals[tactic]}" for tactic in self.fg.marginals]
             marginal_output = ','.join(marginal_output)
             file.write(f"{incident_name},{marginal_output},Score,{self.score}\n")
     
     def export_scores_json(self, incident_name: str, filename: str=DEFAULT_SCORES_PATH_JSON):
         """ Exports the scores to json file """
         self.check_computations()
-        formatted_marginals = {tactic: float(self.fg.marginals[tactic][1]) for tactic in self.fg.marginals}
+        formatted_marginals = {tactic: float(self.fg.marginals[tactic]) for tactic in self.fg.marginals}
         incident_export = {"name": incident_name,
                            "marginals": formatted_marginals, 
                            "score": float(self.score)}

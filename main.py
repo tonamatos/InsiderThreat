@@ -30,6 +30,7 @@ components.sort(key=len, reverse=True)
 print("There are", len(components), "subgraphs.")
 
 all_event_subgraphs = []
+export_data = [] # this is the data that is saved DEFAULT_SCORES_PATH_JSON
 
 for i, component in enumerate(components):
   subgraph = H.subgraph(component)
@@ -47,20 +48,24 @@ for i, component in enumerate(components):
                     "Subgraph"    : subgraph}
   all_event_subgraphs.append(event_subgraph)
 
-all_event_subgraphs.sort(key=lambda x: x["Score"], reverse=True)
+  event_data = {"Index": i,
+                "Marginals": marginals,
+                "Score": score}
+  export_data.append(event_data)
 
-with open(DEFAULT_SCORES_PATH_JSON, "w") as file:
-  json.dump(all_event_subgraphs, file, indent=4)
+export_data.sort(key=lambda x: x["Score"], reverse=True) # sort incidents by score
+with open(DEFAULT_SCORES_PATH_JSON, mode="w") as file:
+  json.dump(export_data, file, indent=4)
 
-# for event_subgraph in all_event_subgraphs:
-#   subgraph = event_subgraph["Subgraph"]
+for event_subgraph in all_event_subgraphs:
+  subgraph = event_subgraph["Subgraph"]
 
-#   # If you don't want 600+ images of a single node...
-#   if subgraph.number_of_edges() == 0:
-#     break # since after this they all have zero edges
+  # If you don't want 600+ images of a single node...
+  if subgraph.number_of_edges() == 0:
+    break # since after this they all have zero edges
 
-#   index = event_subgraph["Index"]
-#   save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"
-#   plot_graph(subgraph, node_label="description", save_path=save_path)
+  index = event_subgraph["Index"]
+  save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"
+  plot_graph(subgraph, node_label="description", save_path=save_path)
 
-# print("Done creating images.")
+print("Done creating images.")

@@ -4,7 +4,7 @@ import json
 from json.decoder import JSONDecodeError
 
 from factor_graph import FactorGraph
-from config import EVENT_TYPE_TO_MITRE, DEFAULT_SCORES_PATH_TXT, DEFAULT_SCORES_PATH_JSON
+from config import EVENT_TYPE_TO_MITRE, DEFAULT_SCORES_PATH_TXT, DEFAULT_SCORES_PATH_JSON, WEIGHT_PARAMETERS
 
 class ScoreCalculator:
     """ Class designed to compute scores given alerts and factor graph.
@@ -22,7 +22,7 @@ class ScoreCalculator:
         
         score = 0
         for alert in self.alerts:
-            score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1]
+            score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1] * WEIGHT_PARAMETERS[EVENT_TYPE_TO_MITRE[alert['type']][0]]
         self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
         return self.score
     

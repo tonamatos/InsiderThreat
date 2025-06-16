@@ -122,7 +122,6 @@ class App(tk.Tk):
             tactic_dict["Exfiltration"] = self.bool_exfiltration.get()
         if self.tactic_statuses["Defense Evasion"] == 'enabled':
             tactic_dict["Defense Evasion"] = self.bool_defense_evasion.get()
-
         user_feedback.update_weight_parameters(tactic_dict)
 
     def on_dropdown_select(self, event=None):
@@ -174,6 +173,13 @@ class App(tk.Tk):
                         self.host_info_container.insert(tk.END, f"\nDepartment: \t{department}")
                         self.host_info_container.insert(tk.END, "\n"+"-"*50)
             self.host_info_container.config(state="disabled")
+            
+            subgraph_tactics = {"Initial Access": False, "Privilege Escalation": False, "Collection": False, "Exfiltration": False, "Defense Evasion": False}
+            for key in selected_subgraph['Marginals'].keys():
+                subgraph_tactics[key] = True
+            self.update_user_feedback(subgraph_tactics)
+
+            
 
     def load_system_data(self):
         subprocess.run(["python", "main.py"])

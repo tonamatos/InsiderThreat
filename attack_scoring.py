@@ -6,9 +6,6 @@ from json.decoder import JSONDecodeError
 from factor_graph import FactorGraph
 from config import *
 
-HIGH_PRIORITY = 0.1 # TOP 10%
-MED_PRIORITY = 0.25 # NEXT 25 %
-
 class ScoreCalculator:
     """ Class designed to compute scores given alerts and factor graph.
     Used a class so different 'types' of scores can be calculated if needed.

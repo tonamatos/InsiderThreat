@@ -6,7 +6,8 @@ from data_loader import data_load_into_graph as load
 from utils import save_graph, load_graph, plot_graph, create_placeholder_graph
 from factor_graph import *
 from config import IMAGES_DIRECTORY, DEFAULT_SCORES_PATH_JSON
-from attack_scoring import ScoreCalculator
+from attack_scoring import ScoreCalculator, EventsDataTracker
+
 
 # STEP 1: Load data as a graph and a dictionary
 print("Loading data...")
@@ -31,7 +32,6 @@ print("There are", len(components), "subgraphs.")
 print("Creating images...")
 
 all_event_subgraphs = []
-export_data = [] # this is the data that is saved DEFAULT_SCORES_PATH_JSON
 
 for i, component in enumerate(components):
   subgraph = H.subgraph(component)
@@ -46,17 +46,14 @@ for i, component in enumerate(components):
                     "Marginals"   : marginals,
                     "Score"       : score,
                     "Index"       : i, # This index is sorted by subgraph size.
-                    "Subgraph"    : subgraph}
+                    "Subgraph"    : subgraph,
+                    "Priority"    : None}
   all_event_subgraphs.append(event_subgraph)
 
-  event_data = {"Index": i,
-                "Marginals": marginals,
-                "Score": score}
-  export_data.append(event_data)
+ev_data_tracker = EventsDataTracker(all_event_subgraphs)
+ev_data_tracker.assign_priorities()
+ev_data_tracker.export_to_json()
 
-export_data.sort(key=lambda x: x["Score"], reverse=True) # sort incidents by score
-with open(DEFAULT_SCORES_PATH_JSON, mode="w") as file:
-  json.dump(export_data, file, indent=4)
 
 for event_subgraph in all_event_subgraphs:
   subgraph = event_subgraph["Subgraph"]

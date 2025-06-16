@@ -1,0 +1,635 @@
+incident0,Initial Access,0.006370971542435852,Privilege Escalation,0.6175198392577376,Exfiltration,0.9364866634411261,Collection,0.07050010339624269,Score,0.11466159176224308
+incident1,Privilege Escalation,0.8839721228017063,Defense Evasion,0.5052646467684367,Collection,0.0806197103848182,Exfiltration,0.9659994589467809,Score,0.3116675518238259
+incident2,Privilege Escalation,0.09171381993192018,Initial Access,0.25298100217211245,Exfiltration,0.23778975591644638,Score,0.0322652254836574
+incident3,Defense Evasion,0.5940736459871478,Collection,0.049355339879767,Initial Access,0.46511192891777936,Score,0.15711207432610444
+incident4,Exfiltration,0.0003324777572380409,Defense Evasion,0.5171691513837725,Score,0.02590278793682036
+incident5,Privilege Escalation,0.030808491630876154,Defense Evasion,0.6695167705440123,Score,0.10607573904726246
+incident6,Initial Access,0.9902224536779601,Defense Evasion,0.9891979517010111,Privilege Escalation,0.9739631231029906,Collection,0.9415065890166727,Exfiltration,0.8773570787813143,Score,0.7347809293036839
+incident7,Initial Access,0.007393291444874031,Defense Evasion,0.40901860270404294,Score,0.008295635000708856
+incident8,Privilege Escalation,3.6814052954806335e-05,Initial Access,0.2173869826981314,Score,0.003626184216048424
+incident9,Initial Access,0.0425971509407424,Defense Evasion,0.40506870828615815,Score,0.018110385388967275
+incident10,Initial Access,0.9479146856314983,Defense Evasion,0.9925585487988646,Privilege Escalation,0.9834410291644501,Collection,0.820890126166236,Exfiltration,0.8870930982073716,Score,0.7066203791023399
+incident11,Collection,0.0430379746835443,Exfiltration,0.14556962025316458,Score,0.014101265822784809
+incident12,Collection,0.03281637415528222,Defense Evasion,0.510112304924887,Score,0.037826340609655305
+incident13,Initial Access,0.006065127880737433,Defense Evasion,0.7676424215376129,Privilege Escalation,0.3556691830273094,Score,0.06900998761401422
+incident14,Defense Evasion,0.005465562584121663,Privilege Escalation,0.7504268463249429,Score,0.07580786339427133
+incident15,Defense Evasion,0.2492669681698223,Initial Access,0.3675557449338556,Collection,0.3769879300414642,Score,0.07177644914862992
+incident16,Initial Access,0.024992850103403498,Defense Evasion,0.6769117441271142,Privilege Escalation,0.8296451132416877,Score,0.12707821498627211
+incident17,Initial Access,0.0018598905006170163,Privilege Escalation,0.40963080448633227,Score,0.008378605139788347
+incident18,Privilege Escalation,0.22609170546252985,Exfiltration,0.49293880576470694,Initial Access,0.5849415069250486,Score,0.11706815588314168
+incident19,Exfiltration,0.1945525291828794,Privilege Escalation,0.19455252918287935,Score,0.06225680933852141
+incident20,Privilege Escalation,0.11589717562996155,Collection,0.027653809817220876,Score,0.02428558751868114
+incident21,Initial Access,0.008364761119879957,Defense Evasion,0.4901911061424382,Score,0.04055365027057585
+incident22,Initial Access,0.912453270145797,Privilege Escalation,0.9584648427381107,Collection,0.776130499796631,Exfiltration,0.9304216295666184,Score,0.6965399949400362
+incident23,Initial Access,0.912453270145797,Privilege Escalation,0.9584648427381107,Collection,0.776130499796631,Exfiltration,0.9304216295666184,Score,0.6965399949400362
+incident24,Collection,0.22321428571428575,Defense Evasion,0.46874999999999994,Score,0.09654017857142859
+incident25,Defense Evasion,0.13718898292803805,Privilege Escalation,0.7025557451083516,Collection,0.3587394943745291,Score,0.11050685379071098
+incident26,Defense Evasion,0.6178152677143065,Collection,0.19889895403271984,Initial Access,0.28093176013407556,Score,0.12011343970417351
+incident27,Defense Evasion,0.17998641629601722,Privilege Escalation,0.4956510070710343,Exfiltration,0.767669423723473,Score,0.15563080553276384
+incident28,Privilege Escalation,0.09598062747934805,Defense Evasion,0.2576084917247075,Score,0.025636337788987294
+incident29,Exfiltration,0.036238795966751586,Collection,0.036238795966751586,Score,0.0036238795966751585
+incident30,Defense Evasion,0.40190346504381735,Initial Access,0.19921474975307057,Collection,0.3595624629445818,Score,0.09329159827372388
+incident31,Privilege Escalation,0.017341132568725208,Defense Evasion,0.25135834396776086,Score,0.008451600170284674
+incident32,Defense Evasion,0.005604483586869498,Privilege Escalation,0.39191353082465985,Score,0.02995396317053644
+incident33,Collection,0.026136957658128592,Defense Evasion,0.21432305279665445,Score,0.00888656560376372
+incident34,Privilege Escalation,0.7653061224489796,Collection,0.12755102040816327,Score,0.2848639455782313
+incident35,Privilege Escalation,0.8368200836820083,Initial Access,0.23012552301255232,Score,0.3500697350069735
+incident36,Collection,0.7977757139269046,Defense Evasion,0.16923924387652053,Exfiltration,0.2520184399977653,Score,0.14700454178362696
+incident37,Privilege Escalation,0.020842017507294707,Exfiltration,0.5127136306794498,Score,0.05266083090176463
+incident38,Initial Access,0.02870264064293915,Privilege Escalation,0.9557979334098736,Score,0.28960964408725604
+incident39,Initial Access,0.899383058110043,Privilege Escalation,0.937903995763811,Exfiltration,0.8729792147806006,Score,0.7218575435302065
+incident40,Defense Evasion,0.288135593220339,Privilege Escalation,0.16101694915254236,Score,0.07259887005649718
+incident41,Initial Access,0.22293352356994015,Privilege Escalation,0.572117821540541,Score,0.06786565791202809
+incident42,Collection,0.019596541786743516,Exfiltration,0.1440922190201729,Score,0.006109510086455331
+incident43,Collection,0.2610208816705336,Defense Evasion,0.33642691415313225,Score,0.07463263727764888
+incident44,Privilege Escalation,0.6340727982781565,Exfiltration,0.19236553627423505,Defense Evasion,0.4131612308401521,Score,0.0973635464263003
+incident45,Collection,0.01383508577753182,Defense Evasion,0.9075816270060875,Score,0.2429441062534588
+incident46,Privilege Escalation,0.3542051426283406,Initial Access,0.49769248141030875,Score,0.13241711475431034
+incident47,Privilege Escalation,0.20637898686679174,Initial Access,0.09380863039399621,Score,0.019387116948092552
+incident48,Privilege Escalation,0.045703839122486295,Initial Access,0.5073126142595978,Score,0.05530164533820841
+incident49,Collection,0.7215189873417721,Exfiltration,0.34177215189873417,Score,0.2873417721518987
+incident50,Initial Access,0.0829694323144105,Defense Evasion,0.3275109170305676,Score,0.0438136826783115
+incident51,Collection,0.04303797468354431,Exfiltration,0.14556962025316458,Score,0.009156118143459917
+incident52,Collection,0.4499755595894011,Exfiltration,0.23953508471018808,Defense Evasion,0.16959651564834383,Score,0.058635275970891174
+incident53,Privilege Escalation,0.7433344776290193,Initial Access,0.444787168414559,Defense Evasion,0.36503200346503684,Score,0.15088305200082308
+incident54,Collection,0.16101694915254236,Exfiltration,0.288135593220339,Score,0.03686440677966102
+incident55,Exfiltration,0.14792899408284024,Privilege Escalation,0.591715976331361,Score,0.1257396449704142
+incident56,Exfiltration,0.19455252918287935,Privilege Escalation,0.19455252918287935,Score,0.019455252918287935
+incident57,Initial Access,0.8880597014925374,Privilege Escalation,0.9253731343283582,Score,0.6809701492537314
+incident58,Collection,0.8415300546448086,Exfiltration,0.9508196721311475,Score,0.7224043715846994
+incident59,Defense Evasion,0.8968609865470852,Collection,0.11210762331838565,Score,0.36434977578475336
+incident60,Collection,0.5609756097560975,Exfiltration,0.5609756097560975,Score,0.224390243902439
+incident61,Privilege Escalation,0.13698630136986303,Collection,0.684931506849315,Score,0.1780821917808219
+incident62,Defense Evasion,0.4509803921568627,Privilege Escalation,0.5490196078431373,Score,0.17745098039215684
+incident63,Collection,0.42537313432835816,Exfiltration,0.3134328358208956,Score,0.09514925373134328
+incident64,Defense Evasion,0.5930232558139537,Initial Access,0.8837209302325582,Score,0.4424418604651163
+incident65,Collection,0.7083333333333334,Exfiltration,0.1875,Score,0.221875
+incident66,Defense Evasion,0.684931506849315,Collection,0.13698630136986303,Score,0.1780821917808219
+incident67,Defense Evasion,0.1,Score,0.01
+incident68,Defense Evasion,0.4,Score,0.16
+incident69,Defense Evasion,0.2,Score,0.04
+incident70,Exfiltration,0.1,Score,0.01
+incident71,Collection,0.1,Score,0.01
+incident72,Defense Evasion,0.2,Score,0.04
+incident73,Exfiltration,0.1,Score,0.01
+incident74,Exfiltration,0.1,Score,0.01
+incident75,Exfiltration,0.4,Score,0.16
+incident76,Defense Evasion,0.1,Score,0.01
+incident77,Exfiltration,0.1,Score,0.01
+incident78,Exfiltration,0.3,Score,0.09
+incident79,Exfiltration,0.1,Score,0.01
+incident80,Exfiltration,0.6,Score,0.36
+incident81,Collection,0.3,Score,0.09
+incident82,Exfiltration,1.0,Score,1.0
+incident83,Collection,0.1,Score,0.01
+incident84,Initial Access,0.1,Score,0.01
+incident85,Initial Access,0.2,Score,0.04
+incident86,Initial Access,0.1,Score,0.01
+incident87,Initial Access,0.6,Score,0.36
+incident88,Initial Access,0.1,Score,0.01
+incident89,Collection,0.7,Score,0.48999999999999994
+incident90,Initial Access,0.1,Score,0.01
+incident91,Privilege Escalation,0.1,Score,0.01
+incident92,Privilege Escalation,0.2,Score,0.04
+incident93,Privilege Escalation,0.2,Score,0.04
+incident94,Privilege Escalation,0.1,Score,0.01
+incident95,Privilege Escalation,0.6,Score,0.36
+incident96,Privilege Escalation,0.1,Score,0.01
+incident97,Privilege Escalation,0.1,Score,0.01
+incident98,Privilege Escalation,0.3,Score,0.09
+incident99,Privilege Escalation,0.8,Score,0.64
+incident100,Privilege Escalation,0.1,Score,0.01
+incident101,Privilege Escalation,0.2,Score,0.04
+incident102,Exfiltration,0.2,Score,0.04
+incident103,Initial Access,0.2,Score,0.04
+incident104,Exfiltration,0.2,Score,0.04
+incident105,Exfiltration,0.1,Score,0.01
+incident106,Privilege Escalation,0.1,Score,0.01
+incident107,Defense Evasion,0.1,Score,0.01
+incident108,Exfiltration,0.2,Score,0.04
+incident109,Defense Evasion,0.5,Score,0.25
+incident110,Exfiltration,0.2,Score,0.04
+incident111,Defense Evasion,0.4,Score,0.16
+incident112,Initial Access,0.2,Score,0.04
+incident113,Exfiltration,0.2,Score,0.04
+incident114,Initial Access,0.4,Score,0.16
+incident115,Initial Access,0.1,Score,0.01
+incident116,Initial Access,0.2,Score,0.04
+incident117,Exfiltration,0.1,Score,0.01
+incident118,Exfiltration,0.1,Score,0.01
+incident119,Defense Evasion,0.1,Score,0.01
+incident120,Exfiltration,0.4,Score,0.16
+incident121,Exfiltration,0.6,Score,0.36
+incident122,Exfiltration,0.2,Score,0.04
+incident123,Exfiltration,0.6,Score,0.36
+incident124,Exfiltration,0.5,Score,0.25
+incident125,Defense Evasion,0.2,Score,0.04
+incident126,Defense Evasion,0.6,Score,0.36
+incident127,Defense Evasion,0.4,Score,0.16
+incident128,Defense Evasion,0.1,Score,0.01
+incident129,Defense Evasion,0.2,Score,0.04
+incident130,Defense Evasion,0.4,Score,0.16
+incident131,Collection,0.3,Score,0.09
+incident132,Collection,0.4,Score,0.16
+incident133,Collection,0.1,Score,0.01
+incident134,Defense Evasion,0.1,Score,0.01
+incident135,Initial Access,0.1,Score,0.01
+incident136,Initial Access,0.1,Score,0.01
+incident137,Initial Access,0.1,Score,0.01
+incident138,Privilege Escalation,0.1,Score,0.01
+incident139,Privilege Escalation,0.1,Score,0.01
+incident140,Privilege Escalation,0.1,Score,0.01
+incident141,Defense Evasion,0.3,Score,0.09
+incident142,Defense Evasion,0.1,Score,0.01
+incident143,Defense Evasion,0.8,Score,0.64
+incident144,Exfiltration,0.1,Score,0.01
+incident145,Privilege Escalation,0.6,Score,0.36
+incident146,Privilege Escalation,0.3,Score,0.09
+incident147,Privilege Escalation,0.1,Score,0.01
+incident148,Privilege Escalation,0.3,Score,0.09
+incident149,Privilege Escalation,0.2,Score,0.04
+incident150,Privilege Escalation,0.1,Score,0.01
+incident151,Defense Evasion,0.1,Score,0.01
+incident152,Defense Evasion,0.3,Score,0.09
+incident153,Defense Evasion,0.2,Score,0.04
+incident154,Defense Evasion,0.7,Score,0.48999999999999994
+incident155,Defense Evasion,0.5,Score,0.25
+incident156,Defense Evasion,0.3,Score,0.09
+incident157,Exfiltration,0.2,Score,0.04
+incident158,Initial Access,0.1,Score,0.01
+incident159,Collection,0.1,Score,0.01
+incident160,Initial Access,0.1,Score,0.01
+incident161,Initial Access,0.4,Score,0.16
+incident162,Initial Access,0.3,Score,0.09
+incident163,Initial Access,0.1,Score,0.01
+incident164,Initial Access,0.6,Score,0.36
+incident165,Initial Access,0.2,Score,0.04
+incident166,Exfiltration,0.4,Score,0.16
+incident167,Exfiltration,0.1,Score,0.01
+incident168,Exfiltration,0.1,Score,0.01
+incident169,Exfiltration,0.1,Score,0.01
+incident170,Privilege Escalation,0.1,Score,0.01
+incident171,Initial Access,0.1,Score,0.01
+incident172,Collection,0.7,Score,0.48999999999999994
+incident173,Exfiltration,0.2,Score,0.04
+incident174,Exfiltration,0.3,Score,0.09
+incident175,Exfiltration,0.1,Score,0.01
+incident176,Exfiltration,0.3,Score,0.09
+incident177,Initial Access,0.2,Score,0.04
+incident178,Initial Access,0.1,Score,0.01
+incident179,Exfiltration,0.6,Score,0.36
+incident180,Initial Access,0.1,Score,0.01
+incident181,Privilege Escalation,0.5,Score,0.25
+incident182,Collection,0.1,Score,0.01
+incident183,Collection,0.4,Score,0.16
+incident184,Defense Evasion,0.1,Score,0.01
+incident185,Exfiltration,0.2,Score,0.04
+incident186,Exfiltration,0.6,Score,0.36
+incident187,Exfiltration,0.5,Score,0.25
+incident188,Exfiltration,0.2,Score,0.04
+incident189,Collection,0.1,Score,0.01
+incident190,Privilege Escalation,0.3,Score,0.09
+incident191,Privilege Escalation,0.2,Score,0.04
+incident192,Privilege Escalation,0.5,Score,0.25
+incident193,Privilege Escalation,0.1,Score,0.01
+incident194,Initial Access,0.1,Score,0.01
+incident195,Privilege Escalation,0.3,Score,0.09
+incident196,Exfiltration,0.5,Score,0.25
+incident197,Exfiltration,0.3,Score,0.09
+incident198,Exfiltration,0.6,Score,0.36
+incident199,Initial Access,0.1,Score,0.01
+incident200,Collection,0.1,Score,0.01
+incident201,Exfiltration,0.6,Score,0.36
+incident202,Exfiltration,0.1,Score,0.01
+incident203,Exfiltration,0.1,Score,0.01
+incident204,Exfiltration,0.1,Score,0.01
+incident205,Collection,0.2,Score,0.04
+incident206,Initial Access,0.4,Score,0.16
+incident207,Exfiltration,0.1,Score,0.01
+incident208,Exfiltration,0.1,Score,0.01
+incident209,Exfiltration,0.5,Score,0.25
+incident210,Exfiltration,0.4,Score,0.16
+incident211,Collection,0.5,Score,0.25
+incident212,Exfiltration,0.4,Score,0.16
+incident213,Exfiltration,0.1,Score,0.01
+incident214,Privilege Escalation,0.1,Score,0.01
+incident215,Defense Evasion,0.4,Score,0.16
+incident216,Exfiltration,0.1,Score,0.01
+incident217,Initial Access,0.1,Score,0.01
+incident218,Exfiltration,0.2,Score,0.04
+incident219,Privilege Escalation,0.1,Score,0.01
+incident220,Privilege Escalation,0.6,Score,0.36
+incident221,Privilege Escalation,0.1,Score,0.01
+incident222,Initial Access,0.1,Score,0.01
+incident223,Exfiltration,0.2,Score,0.04
+incident224,Defense Evasion,0.2,Score,0.04
+incident225,Initial Access,0.1,Score,0.01
+incident226,Initial Access,0.1,Score,0.01
+incident227,Initial Access,0.2,Score,0.04
+incident228,Exfiltration,0.1,Score,0.01
+incident229,Exfiltration,0.1,Score,0.01
+incident230,Exfiltration,0.3,Score,0.09
+incident231,Exfiltration,0.1,Score,0.01
+incident232,Exfiltration,0.4,Score,0.16
+incident233,Collection,0.2,Score,0.04
+incident234,Exfiltration,0.2,Score,0.04
+incident235,Defense Evasion,0.1,Score,0.01
+incident236,Collection,0.1,Score,0.01
+incident237,Collection,0.3,Score,0.09
+incident238,Defense Evasion,0.1,Score,0.01
+incident239,Defense Evasion,0.1,Score,0.01
+incident240,Defense Evasion,0.1,Score,0.01
+incident241,Initial Access,0.3,Score,0.09
+incident242,Initial Access,0.3,Score,0.09
+incident243,Exfiltration,0.2,Score,0.04
+incident244,Exfiltration,0.3,Score,0.09
+incident245,Exfiltration,0.1,Score,0.01
+incident246,Exfiltration,0.1,Score,0.01
+incident247,Defense Evasion,0.1,Score,0.01
+incident248,Defense Evasion,0.8,Score,0.64
+incident249,Defense Evasion,0.2,Score,0.04
+incident250,Collection,0.7,Score,0.48999999999999994
+incident251,Initial Access,0.2,Score,0.04
+incident252,Initial Access,0.6,Score,0.36
+incident253,Initial Access,0.3,Score,0.09
+incident254,Initial Access,0.5,Score,0.25
+incident255,Initial Access,0.4,Score,0.16
+incident256,Defense Evasion,0.2,Score,0.04
+incident257,Privilege Escalation,0.5,Score,0.25
+incident258,Exfiltration,0.4,Score,0.16
+incident259,Defense Evasion,0.2,Score,0.04
+incident260,Defense Evasion,0.1,Score,0.01
+incident261,Initial Access,0.1,Score,0.01
+incident262,Defense Evasion,0.1,Score,0.01
+incident263,Defense Evasion,0.5,Score,0.25
+incident264,Defense Evasion,0.1,Score,0.01
+incident265,Collection,0.1,Score,0.01
+incident266,Collection,0.5,Score,0.25
+incident267,Collection,0.7,Score,0.48999999999999994
+incident268,Initial Access,0.3,Score,0.09
+incident269,Initial Access,0.1,Score,0.01
+incident270,Initial Access,0.1,Score,0.01
+incident271,Initial Access,0.6,Score,0.36
+incident272,Privilege Escalation,0.2,Score,0.04
+incident273,Exfiltration,0.2,Score,0.04
+incident274,Privilege Escalation,0.1,Score,0.01
+incident275,Privilege Escalation,0.2,Score,0.04
+incident276,Initial Access,0.1,Score,0.01
+incident277,Initial Access,0.6,Score,0.36
+incident278,Initial Access,0.4,Score,0.16
+incident279,Initial Access,0.1,Score,0.01
+incident280,Defense Evasion,0.1,Score,0.01
+incident281,Defense Evasion,0.2,Score,0.04
+incident282,Defense Evasion,0.3,Score,0.09
+incident283,Defense Evasion,0.4,Score,0.16
+incident284,Defense Evasion,0.1,Score,0.01
+incident285,Defense Evasion,0.4,Score,0.16
+incident286,Collection,0.1,Score,0.01
+incident287,Exfiltration,0.1,Score,0.01
+incident288,Exfiltration,0.6,Score,0.36
+incident289,Exfiltration,0.2,Score,0.04
+incident290,Exfiltration,0.4,Score,0.16
+incident291,Initial Access,0.7,Score,0.48999999999999994
+incident292,Initial Access,0.1,Score,0.01
+incident293,Initial Access,0.1,Score,0.01
+incident294,Initial Access,0.2,Score,0.04
+incident295,Initial Access,0.1,Score,0.01
+incident296,Initial Access,0.2,Score,0.04
+incident297,Initial Access,0.2,Score,0.04
+incident298,Defense Evasion,0.8,Score,0.64
+incident299,Defense Evasion,0.5,Score,0.25
+incident300,Defense Evasion,0.3,Score,0.09
+incident301,Defense Evasion,0.2,Score,0.04
+incident302,Initial Access,0.4,Score,0.16
+incident303,Exfiltration,0.1,Score,0.01
+incident304,Exfiltration,0.1,Score,0.01
+incident305,Initial Access,0.3,Score,0.09
+incident306,Initial Access,0.3,Score,0.09
+incident307,Initial Access,0.1,Score,0.01
+incident308,Initial Access,0.1,Score,0.01
+incident309,Collection,0.1,Score,0.01
+incident310,Collection,0.4,Score,0.16
+incident311,Collection,0.3,Score,0.09
+incident312,Collection,0.3,Score,0.09
+incident313,Collection,0.3,Score,0.09
+incident314,Collection,0.1,Score,0.01
+incident315,Collection,0.1,Score,0.01
+incident316,Exfiltration,0.7,Score,0.48999999999999994
+incident317,Collection,0.1,Score,0.01
+incident318,Initial Access,0.1,Score,0.01
+incident319,Exfiltration,0.2,Score,0.04
+incident320,Exfiltration,0.2,Score,0.04
+incident321,Exfiltration,0.5,Score,0.25
+incident322,Exfiltration,0.1,Score,0.01
+incident323,Exfiltration,0.2,Score,0.04
+incident324,Exfiltration,0.6,Score,0.36
+incident325,Exfiltration,0.1,Score,0.01
+incident326,Exfiltration,0.1,Score,0.01
+incident327,Defense Evasion,0.2,Score,0.04
+incident328,Privilege Escalation,0.3,Score,0.09
+incident329,Defense Evasion,0.2,Score,0.04
+incident330,Defense Evasion,1.0,Score,1.0
+incident331,Initial Access,0.8,Score,0.64
+incident332,Defense Evasion,0.1,Score,0.01
+incident333,Defense Evasion,0.2,Score,0.04
+incident334,Privilege Escalation,0.1,Score,0.01
+incident335,Privilege Escalation,0.3,Score,0.09
+incident336,Exfiltration,0.1,Score,0.01
+incident337,Privilege Escalation,0.4,Score,0.16
+incident338,Exfiltration,0.1,Score,0.01
+incident339,Initial Access,0.5,Score,0.25
+incident340,Exfiltration,0.1,Score,0.01
+incident341,Initial Access,1.0,Score,1.0
+incident342,Initial Access,0.3,Score,0.09
+incident343,Exfiltration,0.1,Score,0.01
+incident344,Exfiltration,0.1,Score,0.01
+incident345,Defense Evasion,0.1,Score,0.01
+incident346,Initial Access,0.3,Score,0.09
+incident347,Collection,0.3,Score,0.09
+incident348,Defense Evasion,0.6,Score,0.36
+incident349,Initial Access,0.5,Score,0.25
+incident350,Collection,0.1,Score,0.01
+incident351,Collection,0.2,Score,0.04
+incident352,Collection,0.1,Score,0.01
+incident353,Defense Evasion,0.7,Score,0.48999999999999994
+incident354,Exfiltration,0.7,Score,0.48999999999999994
+incident355,Exfiltration,0.5,Score,0.25
+incident356,Exfiltration,0.3,Score,0.09
+incident357,Exfiltration,0.1,Score,0.01
+incident358,Exfiltration,0.1,Score,0.01
+incident359,Initial Access,0.4,Score,0.16
+incident360,Exfiltration,0.3,Score,0.09
+incident361,Exfiltration,0.2,Score,0.04
+incident362,Exfiltration,0.5,Score,0.25
+incident363,Initial Access,0.1,Score,0.01
+incident364,Exfiltration,0.1,Score,0.01
+incident365,Collection,0.1,Score,0.01
+incident366,Collection,0.1,Score,0.01
+incident367,Collection,0.1,Score,0.01
+incident368,Collection,0.2,Score,0.04
+incident369,Collection,0.1,Score,0.01
+incident370,Defense Evasion,0.1,Score,0.01
+incident371,Defense Evasion,0.1,Score,0.01
+incident372,Defense Evasion,0.4,Score,0.16
+incident373,Defense Evasion,0.2,Score,0.04
+incident374,Defense Evasion,0.1,Score,0.01
+incident375,Defense Evasion,0.7,Score,0.48999999999999994
+incident376,Initial Access,0.4,Score,0.16
+incident377,Defense Evasion,0.6,Score,0.36
+incident378,Exfiltration,0.2,Score,0.04
+incident379,Exfiltration,0.3,Score,0.09
+incident380,Defense Evasion,0.2,Score,0.04
+incident381,Exfiltration,0.1,Score,0.01
+incident382,Exfiltration,0.2,Score,0.04
+incident383,Exfiltration,0.3,Score,0.09
+incident384,Exfiltration,0.2,Score,0.04
+incident385,Exfiltration,0.6,Score,0.36
+incident386,Defense Evasion,0.7,Score,0.48999999999999994
+incident387,Privilege Escalation,1.0,Score,1.0
+incident388,Collection,0.4,Score,0.16
+incident389,Collection,0.2,Score,0.04
+incident390,Collection,0.3,Score,0.09
+incident391,Privilege Escalation,0.1,Score,0.01
+incident392,Exfiltration,0.1,Score,0.01
+incident393,Exfiltration,0.1,Score,0.01
+incident394,Initial Access,0.1,Score,0.01
+incident395,Exfiltration,0.3,Score,0.09
+incident396,Initial Access,0.2,Score,0.04
+incident397,Initial Access,0.1,Score,0.01
+incident398,Initial Access,0.6,Score,0.36
+incident399,Initial Access,0.1,Score,0.01
+incident400,Collection,0.7,Score,0.48999999999999994
+incident401,Collection,0.2,Score,0.04
+incident402,Collection,0.1,Score,0.01
+incident403,Collection,0.5,Score,0.25
+incident404,Defense Evasion,0.3,Score,0.09
+incident405,Collection,0.2,Score,0.04
+incident406,Collection,0.2,Score,0.04
+incident407,Privilege Escalation,0.3,Score,0.09
+incident408,Collection,0.7,Score,0.48999999999999994
+incident409,Privilege Escalation,0.1,Score,0.01
+incident410,Privilege Escalation,0.1,Score,0.01
+incident411,Privilege Escalation,0.3,Score,0.09
+incident412,Privilege Escalation,1.0,Score,1.0
+incident413,Privilege Escalation,0.9,Score,0.8099999999999999
+incident414,Privilege Escalation,0.1,Score,0.01
+incident415,Defense Evasion,0.2,Score,0.04
+incident416,Privilege Escalation,0.5,Score,0.25
+incident417,Privilege Escalation,0.3,Score,0.09
+incident418,Initial Access,0.2,Score,0.04
+incident419,Privilege Escalation,0.4,Score,0.16
+incident420,Privilege Escalation,0.1,Score,0.01
+incident421,Privilege Escalation,0.2,Score,0.04
+incident422,Initial Access,0.1,Score,0.01
+incident423,Privilege Escalation,0.1,Score,0.01
+incident424,Privilege Escalation,0.1,Score,0.01
+incident425,Collection,0.2,Score,0.04
+incident426,Collection,0.1,Score,0.01
+incident427,Collection,0.2,Score,0.04
+incident428,Collection,0.2,Score,0.04
+incident429,Initial Access,0.1,Score,0.01
+incident430,Initial Access,0.3,Score,0.09
+incident431,Initial Access,0.9,Score,0.8099999999999999
+incident432,Defense Evasion,0.1,Score,0.01
+incident433,Defense Evasion,0.2,Score,0.04
+incident434,Defense Evasion,0.3,Score,0.09
+incident435,Defense Evasion,0.4,Score,0.16
+incident436,Defense Evasion,0.1,Score,0.01
+incident437,Exfiltration,0.2,Score,0.04
+incident438,Initial Access,0.2,Score,0.04
+incident439,Exfiltration,0.1,Score,0.01
+incident440,Exfiltration,0.3,Score,0.09
+incident441,Initial Access,0.2,Score,0.04
+incident442,Exfiltration,0.4,Score,0.16
+incident443,Privilege Escalation,0.1,Score,0.01
+incident444,Privilege Escalation,0.6,Score,0.36
+incident445,Exfiltration,0.1,Score,0.01
+incident446,Exfiltration,0.8,Score,0.64
+incident447,Collection,0.3,Score,0.09
+incident448,Exfiltration,0.2,Score,0.04
+incident449,Exfiltration,0.1,Score,0.01
+incident450,Exfiltration,0.3,Score,0.09
+incident451,Collection,0.2,Score,0.04
+incident452,Defense Evasion,0.3,Score,0.09
+incident453,Collection,0.1,Score,0.01
+incident454,Exfiltration,0.1,Score,0.01
+incident455,Defense Evasion,0.1,Score,0.01
+incident456,Collection,0.1,Score,0.01
+incident457,Exfiltration,0.1,Score,0.01
+incident458,Privilege Escalation,0.1,Score,0.01
+incident459,Collection,0.4,Score,0.16
+incident460,Privilege Escalation,0.4,Score,0.16
+incident461,Initial Access,0.2,Score,0.04
+incident462,Initial Access,0.3,Score,0.09
+incident463,Initial Access,0.1,Score,0.01
+incident464,Initial Access,0.3,Score,0.09
+incident465,Collection,0.2,Score,0.04
+incident466,Privilege Escalation,0.2,Score,0.04
+incident467,Collection,0.1,Score,0.01
+incident468,Collection,0.3,Score,0.09
+incident469,Collection,0.6,Score,0.36
+incident470,Collection,0.1,Score,0.01
+incident471,Exfiltration,0.7,Score,0.48999999999999994
+incident472,Collection,0.2,Score,0.04
+incident473,Defense Evasion,0.2,Score,0.04
+incident474,Defense Evasion,0.1,Score,0.01
+incident475,Defense Evasion,0.7,Score,0.48999999999999994
+incident476,Initial Access,0.1,Score,0.01
+incident477,Collection,0.1,Score,0.01
+incident478,Defense Evasion,0.1,Score,0.01
+incident479,Defense Evasion,0.6,Score,0.36
+incident480,Defense Evasion,0.1,Score,0.01
+incident481,Exfiltration,0.1,Score,0.01
+incident482,Exfiltration,0.1,Score,0.01
+incident483,Exfiltration,0.5,Score,0.25
+incident484,Exfiltration,0.6,Score,0.36
+incident485,Defense Evasion,0.1,Score,0.01
+incident486,Exfiltration,0.4,Score,0.16
+incident487,Defense Evasion,0.5,Score,0.25
+incident488,Collection,0.2,Score,0.04
+incident489,Defense Evasion,0.2,Score,0.04
+incident490,Defense Evasion,0.1,Score,0.01
+incident491,Defense Evasion,0.4,Score,0.16
+incident492,Defense Evasion,0.2,Score,0.04
+incident493,Defense Evasion,0.3,Score,0.09
+incident494,Privilege Escalation,0.6,Score,0.36
+incident495,Exfiltration,0.1,Score,0.01
+incident496,Initial Access,0.1,Score,0.01
+incident497,Exfiltration,0.2,Score,0.04
+incident498,Exfiltration,0.1,Score,0.01
+incident499,Initial Access,0.4,Score,0.16
+incident500,Initial Access,0.2,Score,0.04
+incident501,Collection,0.2,Score,0.04
+incident502,Collection,0.6,Score,0.36
+incident503,Collection,0.5,Score,0.25
+incident504,Collection,0.1,Score,0.01
+incident505,Collection,0.4,Score,0.16
+incident506,Collection,0.5,Score,0.25
+incident507,Collection,0.1,Score,0.01
+incident508,Collection,0.1,Score,0.01
+incident509,Collection,0.4,Score,0.16
+incident510,Initial Access,0.4,Score,0.16
+incident511,Initial Access,0.7,Score,0.48999999999999994
+incident512,Initial Access,0.3,Score,0.09
+incident513,Initial Access,0.7,Score,0.48999999999999994
+incident514,Initial Access,0.5,Score,0.25
+incident515,Defense Evasion,0.1,Score,0.01
+incident516,Defense Evasion,0.2,Score,0.04
+incident517,Collection,0.3,Score,0.09
+incident518,Defense Evasion,0.2,Score,0.04
+incident519,Defense Evasion,0.1,Score,0.01
+incident520,Initial Access,0.3,Score,0.09
+incident521,Collection,0.4,Score,0.16
+incident522,Privilege Escalation,0.2,Score,0.04
+incident523,Collection,0.1,Score,0.01
+incident524,Privilege Escalation,0.3,Score,0.09
+incident525,Privilege Escalation,0.6,Score,0.36
+incident526,Privilege Escalation,0.4,Score,0.16
+incident527,Privilege Escalation,0.3,Score,0.09
+incident528,Defense Evasion,0.6,Score,0.36
+incident529,Privilege Escalation,0.1,Score,0.01
+incident530,Initial Access,0.3,Score,0.09
+incident531,Exfiltration,0.3,Score,0.09
+incident532,Exfiltration,0.4,Score,0.16
+incident533,Defense Evasion,0.1,Score,0.01
+incident534,Exfiltration,0.4,Score,0.16
+incident535,Exfiltration,0.2,Score,0.04
+incident536,Initial Access,0.1,Score,0.01
+incident537,Initial Access,0.1,Score,0.01
+incident538,Initial Access,0.6,Score,0.36
+incident539,Initial Access,0.6,Score,0.36
+incident540,Initial Access,0.3,Score,0.09
+incident541,Exfiltration,0.2,Score,0.04
+incident542,Initial Access,0.1,Score,0.01
+incident543,Initial Access,0.2,Score,0.04
+incident544,Defense Evasion,0.2,Score,0.04
+incident545,Defense Evasion,0.2,Score,0.04
+incident546,Exfiltration,0.1,Score,0.01
+incident547,Initial Access,0.2,Score,0.04
+incident548,Collection,0.1,Score,0.01
+incident549,Exfiltration,0.1,Score,0.01
+incident550,Privilege Escalation,0.5,Score,0.25
+incident551,Privilege Escalation,0.3,Score,0.09
+incident552,Defense Evasion,0.3,Score,0.09
+incident553,Exfiltration,0.3,Score,0.09
+incident554,Defense Evasion,0.5,Score,0.25
+incident555,Defense Evasion,1.0,Score,1.0
+incident556,Defense Evasion,0.1,Score,0.01
+incident557,Privilege Escalation,0.3,Score,0.09
+incident558,Privilege Escalation,0.4,Score,0.16
+incident559,Privilege Escalation,0.2,Score,0.04
+incident560,Exfiltration,0.1,Score,0.01
+incident561,Exfiltration,0.3,Score,0.09
+incident562,Exfiltration,0.6,Score,0.36
+incident563,Exfiltration,0.8,Score,0.64
+incident564,Exfiltration,0.2,Score,0.04
+incident565,Exfiltration,0.3,Score,0.09
+incident566,Initial Access,0.1,Score,0.01
+incident567,Initial Access,0.4,Score,0.16
+incident568,Initial Access,0.1,Score,0.01
+incident569,Collection,0.4,Score,0.16
+incident570,Collection,0.2,Score,0.04
+incident571,Initial Access,0.2,Score,0.04
+incident572,Collection,0.1,Score,0.01
+incident573,Initial Access,0.1,Score,0.01
+incident574,Collection,0.5,Score,0.25
+incident575,Collection,0.1,Score,0.01
+incident576,Initial Access,0.6,Score,0.36
+incident577,Defense Evasion,0.5,Score,0.25
+incident578,Defense Evasion,0.1,Score,0.01
+incident579,Privilege Escalation,0.3,Score,0.09
+incident580,Collection,0.3,Score,0.09
+incident581,Exfiltration,0.1,Score,0.01
+incident582,Defense Evasion,0.3,Score,0.09
+incident583,Exfiltration,0.1,Score,0.01
+incident584,Exfiltration,0.6,Score,0.36
+incident585,Exfiltration,0.1,Score,0.01
+incident586,Exfiltration,0.1,Score,0.01
+incident587,Exfiltration,0.1,Score,0.01
+incident588,Exfiltration,0.1,Score,0.01
+incident589,Collection,0.4,Score,0.16
+incident590,Collection,0.1,Score,0.01
+incident591,Collection,0.3,Score,0.09
+incident592,Collection,0.1,Score,0.01
+incident593,Defense Evasion,0.3,Score,0.09
+incident594,Defense Evasion,0.2,Score,0.04
+incident595,Initial Access,0.1,Score,0.01
+incident596,Collection,0.1,Score,0.01
+incident597,Collection,0.3,Score,0.09
+incident598,Collection,0.2,Score,0.04
+incident599,Defense Evasion,0.2,Score,0.04
+incident600,Defense Evasion,0.3,Score,0.09
+incident601,Defense Evasion,0.4,Score,0.16
+incident602,Collection,0.1,Score,0.01
+incident603,Collection,0.1,Score,0.01
+incident604,Collection,0.1,Score,0.01
+incident605,Privilege Escalation,0.2,Score,0.04
+incident606,Privilege Escalation,1.0,Score,1.0
+incident607,Privilege Escalation,0.1,Score,0.01
+incident608,Privilege Escalation,0.5,Score,0.25
+incident609,Privilege Escalation,0.2,Score,0.04
+incident610,Privilege Escalation,0.2,Score,0.04
+incident611,Privilege Escalation,0.5,Score,0.25
+incident612,Privilege Escalation,0.5,Score,0.25
+incident613,Privilege Escalation,0.1,Score,0.01
+incident614,Initial Access,0.1,Score,0.01
+incident615,Initial Access,0.5,Score,0.25
+incident616,Initial Access,0.2,Score,0.04
+incident617,Initial Access,0.3,Score,0.09
+incident618,Initial Access,0.2,Score,0.04
+incident619,Initial Access,0.1,Score,0.01
+incident620,Initial Access,0.2,Score,0.04
+incident621,Initial Access,0.1,Score,0.01
+incident622,Collection,0.2,Score,0.04
+incident623,Collection,0.1,Score,0.01
+incident624,Collection,0.3,Score,0.09
+incident625,Collection,0.1,Score,0.01
+incident626,Collection,0.1,Score,0.01
+incident627,Collection,0.4,Score,0.16
+incident628,Collection,0.3,Score,0.09
+incident629,Collection,0.1,Score,0.01
+incident630,Defense Evasion,0.3,Score,0.09
+incident631,Collection,0.3,Score,0.09
+incident632,Collection,0.2,Score,0.04
+incident633,Privilege Escalation,0.1,Score,0.01
+incident634,Privilege Escalation,0.1,Score,0.01

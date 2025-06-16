@@ -25,6 +25,8 @@ class App(tk.Tk):
         self.feedback_container = ttk.Labelframe(self, text='Feedback')
         self.feedback_container.grid(row=0, column=2, padx=20)
 
+        self.tactic_statuses = {}
+
         self.bool_initial_access = tk.BooleanVar()
         self.bool_privilege_escalation = tk.BooleanVar()
         self.bool_collection = tk.BooleanVar()
@@ -81,7 +83,7 @@ class App(tk.Tk):
     def update_image(self, path):
         self.attack_image.config(file=path)
         
-    def update_user_feedback(self, dict):
+    def update_user_feedback(self, dct):
 
         self.bool_initial_access.set(False)
         self.bool_privilege_escalation.set(False)
@@ -89,25 +91,33 @@ class App(tk.Tk):
         self.bool_exfiltration.set(False)
         self.bool_defense_evasion.set(False)
 
-        text_dict = {}
-        for tactic in dict:
-            if dict[tactic]:
-                text_dict[tactic] = 'enabled'
-            if not dict[tactic]:
-                text_dict[tactic] = 'disabled'
+        self.tactic_statuses = {}
+        for tactic in dct:
+            if dct[tactic]:
+                self.tactic_statuses[tactic] = 'enabled'
+            if not dct[tactic]:
+                self.tactic_statuses[tactic] = 'disabled'
 
-        self.check_initial_access.config(state=text_dict['Initial Access'])
-        self.check_privilege_escalation.config(state=text_dict['Privilege Escalation'])
-        self.check_collection.config(state=text_dict['Collection'])
-        self.check_exfiltration.config(state=text_dict['Exfiltration'])
-        self.check_defense_evasion.config(state=text_dict['Defense Evasion'])
+        self.check_initial_access.config(state=self.tactic_statuses['Initial Access'])
+        self.check_privilege_escalation.config(state=self.tactic_statuses['Privilege Escalation'])
+        self.check_collection.config(state=self.tactic_statuses['Collection'])
+        self.check_exfiltration.config(state=self.tactic_statuses['Exfiltration'])
+        self.check_defense_evasion.config(state=self.tactic_statuses['Defense Evasion'])
     
     def submit_feedback(self):
-        user_feedback.update_weight_parameters({"Initial Access": self.bool_initial_access.get(), 
-                       "Privilege Escalation": self.bool_privilege_escalation.get(), 
-                       "Collection": self.bool_collection.get(), 
-                       "Exfiltration": self.bool_exfiltration.get(), 
-                       "Defense Evasion": self.bool_defense_evasion.get()})
+        tactic_dict = {}
+        if self.tactic_statuses["Initial Access"] == 'enabled':
+            tactic_dict["Initial Access"] = self.bool_initial_access.get()
+        if self.tactic_statuses["Privilege Escalation"] == 'enabled':
+            tactic_dict["Privilege Escalation"] = self.bool_privilege_escalation.get()
+        if self.tactic_statuses["Collection"] == 'enabled':
+            tactic_dict["Collection"] = self.bool_collection.get()
+        if self.tactic_statuses["Exfiltration"] == 'enabled':
+            tactic_dict["Exfiltration"] = self.bool_exfiltration.get()
+        if self.tactic_statuses["Defense Evasion"] == 'enabled':
+            tactic_dict["Defense Evasion"] = self.bool_defense_evasion.get()
+
+        user_feedback.update_weight_parameters(tactic_dict)
 
     def on_dropdown_select(self, event=None):
         selected_index = self.subgraph_var.get()

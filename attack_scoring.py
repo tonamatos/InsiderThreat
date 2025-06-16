@@ -4,7 +4,7 @@ import json
 from json.decoder import JSONDecodeError
 
 from factor_graph import FactorGraph
-from config import EVENT_TYPE_TO_MITRE, DEFAULT_SCORES_PATH_TXT, DEFAULT_SCORES_PATH_JSON, WEIGHT_PARAMETERS
+from config import *
 
 class ScoreCalculator:
     """ Class designed to compute scores given alerts and factor graph.
@@ -65,3 +65,33 @@ class ScoreCalculator:
         data.append(incident_export)
         with open(filename, "w") as file:
             json.dump(data, file, indent=4)
+
+
+class EventsDataTracker:
+    """ Class to establish an interface between storing and accessing event data """
+    def __init__(self, events: List):
+        self.events = events 
+
+    def sort_by_score(self):
+        self.events.sort(key=lambda x: x["Score"], reverse=True)
+    
+    def sort_by_size(self):
+        self.events.sort(key=lambda x: x["Index"]) # Index is already sorted by size
+
+    def assign_priorities(self):
+        """ Assume events is sorted by score """
+        self.sort_by_score()
+        high_index_threshold = int(len(self.events) * HIGH_PRIORITY)
+        med_index_threshold = int(len(self.events) * (HIGH_PRIORITY + MED_PRIORITY))
+        for i in range(high_index_threshold):
+            self.events[i]["Priority"] = "High"
+        for i in range(high_index_threshold, med_index_threshold):
+            self.events[i]["Priority"] = "Med"
+        for i in range(med_index_threshold, len(self.events)):
+            self.events[i]["Priority"] = "Low"
+
+    def export_to_json(self, filename=DEFAULT_SCORES_PATH_JSON, keys=("Index", "Score", "Marginals", "Priority")):
+        self.sort_by_score()
+        json_data = [{k: event[k] for k in keys} for event in self.events]
+        with open(filename, mode="w") as file:
+            json.dump(json_data, file, indent=4)

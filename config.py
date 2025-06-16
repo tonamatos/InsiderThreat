@@ -40,3 +40,5 @@ EVENT_TYPE_TO_MITRE = {"Authentication"     : ["Initial Access", "Credential Acc
                        "Exfiltration"       : ["Exfiltration"],
                        "Defense Evasion"    : ["Defense Evasion"]}
 '''
+
+GUI_WINDOW_DIMENSIONS = '1600x1000'

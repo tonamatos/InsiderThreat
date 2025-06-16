@@ -9,21 +9,22 @@ class App(tk.Tk):
     def __init__(self):
         #basic setup
         super().__init__()
-        self.geometry(GUI_WINDOW_DIMENSIONS)
+        #self.geometry(GUI_WINDOW_DIMENSIONS)
         self.resizable(True,True)
         self.title("Attack Graph Viewer")
 
         #image setup
         self.image_container = ttk.Labelframe(self, text='Attack Graph')
-        self.image_container.grid(row=0, column=1, padx=20)
+        self.image_container.grid(row=0, column=1, padx=20, pady=20, sticky='n')
 
         self.attack_image = tk.PhotoImage()
 
-        ttk.Label(self.image_container, image=self.attack_image).pack()
+        self.image_label = ttk.Label(self.image_container, text="", image=self.attack_image, borderwidth=10)
+        self.image_label.pack()
 
         #feedback setup
         self.feedback_container = ttk.Labelframe(self, text='Feedback')
-        self.feedback_container.grid(row=0, column=2, padx=20)
+        self.feedback_container.grid(row=0, column=2, padx=20, pady=20, sticky='n')
 
         self.tactic_statuses = {}
 
@@ -51,7 +52,7 @@ class App(tk.Tk):
 
         #dropdown setup
         self.dropdown_container = ttk.Labelframe(self, text='Attack Graph Selection')
-        self.dropdown_container.grid(row=0, column=0, padx=20, pady=20, rowspan=30)
+        self.dropdown_container.grid(row=0, column=0, padx=20, pady=20, rowspan=30, sticky='n')
 
         # --- Tona's code goes here ---
 
@@ -67,15 +68,15 @@ class App(tk.Tk):
         info_frame.grid(row=2, column=0, pady=10)
 
         self.info_scrollbar = ttk.Scrollbar(info_frame)
-        self.info_scrollbar.pack(side="right", fill="y")
+        #self.info_scrollbar.grid(row=0,column=1)
 
         self.subgraph_info_box = tk.Text(info_frame, width=50, height=15, wrap="word", yscrollcommand=self.info_scrollbar.set)
-        self.subgraph_info_box.pack(side="left", fill="both")
+        self.subgraph_info_box.grid(row=0,column=0)
 
         self.info_scrollbar.config(command=self.subgraph_info_box.yview)
 
         self.host_info_container = tk.Text(info_frame, width=50, height=15, wrap="word", yscrollcommand=self.info_scrollbar.set)
-        self.host_info_container.pack(side="bottom", fill="both")
+        self.host_info_container.grid(row=1,column=0)
 
 
 

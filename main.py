@@ -1,10 +1,11 @@
 import os
+import json
 
 from attack_correlation import *
 from data_loader import data_load_into_graph as load
 from utils import save_graph, load_graph, plot_graph
 from factor_graph import *
-from config import IMAGES_DIRECTORY
+from config import IMAGES_DIRECTORY, DEFAULT_SCORES_PATH_JSON
 from attack_scoring import ScoreCalculator
 
 # STEP 1: Load data as a graph and a dictionary
@@ -29,6 +30,7 @@ components.sort(key=len, reverse=True)
 print("There are", len(components), "subgraphs.")
 
 all_event_subgraphs = []
+export_data = [] # this is the data that is saved DEFAULT_SCORES_PATH_JSON
 
 for i, component in enumerate(components):
   subgraph = H.subgraph(component)
@@ -36,7 +38,9 @@ for i, component in enumerate(components):
   fg = FactorGraph(alerts)
   marginals = fg.run_inference()
   sc = ScoreCalculator(alerts, fg)
-  score = sc.compute_weighted_score()
+  score = sc.compute_weighted_score() # this can be exported to a txt or json file if we like
+  # sc.export_scores_txt(f"incident{i}")
+  # sc.export_scores_json(f"incident{i}")
   event_subgraph = {"Factor graph": fg,
                     "Marginals"   : marginals,
                     "Score"       : score,
@@ -44,8 +48,14 @@ for i, component in enumerate(components):
                     "Subgraph"    : subgraph}
   all_event_subgraphs.append(event_subgraph)
 
-print("Processed", len(all_event_subgraphs), "subgraphs!")
-print("Creating images...")
+  event_data = {"Index": i,
+                "Marginals": marginals,
+                "Score": score}
+  export_data.append(event_data)
+
+export_data.sort(key=lambda x: x["Score"], reverse=True) # sort incidents by score
+with open(DEFAULT_SCORES_PATH_JSON, mode="w") as file:
+  json.dump(export_data, file, indent=4)
 
 for event_subgraph in all_event_subgraphs:
   subgraph = event_subgraph["Subgraph"]

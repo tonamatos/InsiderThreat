@@ -8,7 +8,7 @@ import numpy as np
 from data_loader import data_load_into_graph as load
 from config import EVENT_TYPE_TO_MITRE, MITRE_TRANSITION, FALSE_INDICATION
 
-MAX_ITER = 10 # This might not be necessary after the temporal logic has been added
+MAX_ITER = 10 # Factor graph has cycles so need some way to stop the sumproduct algorithm
 
 class Node:
     """
@@ -129,7 +129,7 @@ class Messages:
     def marginals(self, fg):
         marginals_dict = dict()
         for variable in fg.variables:
-            marginals_dict[variable] = self.marginal(fg.variables[variable])
+            marginals_dict[variable] = float(self.marginal(fg.variables[variable])[1])
         return marginals_dict
 
 
@@ -140,16 +140,15 @@ class FactorGraph:
     Parameters:
     alerts (List): A list of alerts from which factor graph is to be produced where each alert is dictionary-like.
                    Important: alert['type'] is assumed to be a MITRE tactic
+    
+    marginals (Dict[str, float]): A dictionary mapping MITRE tactics to their score/probability according to the factor graph
     """
     def __init__(self, alerts: List):
         tactics = list([EVENT_TYPE_TO_MITRE[alert['type']][0] for alert in alerts]) # TODO: Need to be translated to MITRE tactics
-        
-        self.alerts = alerts
         self.variables = dict() # Use a dict to easily find the variable nodes for a given tactic
         self.factors = dict()
         
         self.marginals = None
-        self.score = None
 
         # Constructing variable nodes for the tactics
         for tactic in tactics:
@@ -207,31 +206,34 @@ class FactorGraph:
         self.marginals = m.marginals(self)
         return self.marginals
     
-    def compute_score(self):
-        """ Computes score as a weighted sum of the severity scores with weights given by the marginals. """
-        if not self.marginals:
-            raise ValueError("Marginals have not been computed yet.")
+    # FactorGraphs should not be computing scores
+    # This has been moved to ScoreCalculator in attack_scoring 
+    #
+    # def compute_score(self):
+    #     """ Computes score as a weighted sum of the severity scores with weights given by the marginals. """
+    #     if not self.marginals:
+    #         raise ValueError("Marginals have not been computed yet.")
         
-        score = 0
-        for alert in self.alerts:
-            score += alert['severity'] * self.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1]
-        self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
-        return self.score
+    #     score = 0
+    #     for alert in self.alerts:
+    #         score += alert['severity'] * self.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]][1]
+    #     self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
+    #     return self.score
     
-    def export_scores(self, incident_name: str, filename: str ="data/scores.txt"):
-        """ Saves the scores to filename.
-        Adds a newline to filename if it exists and creates filenames if not.
-        This function only handles the export part. It should not be doing any computations.
-        """
-        if not self.marginals:
-            raise ValueError("Marginals have not been computed yet.")
-        if not self.score:
-            raise ValueError("Score has not been computed yet.")
+    # def export_scores(self, incident_name: str, filename: str ="data/scores.txt"):
+    #     """ Saves the scores to filename.
+    #     Adds a newline to filename if it exists and creates filenames if not.
+    #     This function only handles the export part. It should not be doing any computations.
+    #     """
+    #     if not self.marginals:
+    #         raise ValueError("Marginals have not been computed yet.")
+    #     if not self.score:
+    #         raise ValueError("Score has not been computed yet.")
         
-        with open(filename, mode='a') as f:
-            marginal_output = [f'{tactic},{self.marginals[tactic][1]}' for tactic in self.marginals]
-            marginal_output = ','.join(marginal_output)
-            f.write(f"{incident_name},{marginal_output},Score,{self.score}\n")
+    #     with open(filename, mode='a') as f:
+    #         marginal_output = [f'{tactic},{self.marginals[tactic][1]}' for tactic in self.marginals]
+    #         marginal_output = ','.join(marginal_output)
+    #         f.write(f"{incident_name},{marginal_output},Score,{self.score}\n")
 
 
 if __name__ == "__main__":
@@ -240,5 +242,3 @@ if __name__ == "__main__":
     fg = FactorGraph(alerts)
 
     print(fg.run_inference())
-    print(fg.compute_score())
-    fg.export_scores("incident1")

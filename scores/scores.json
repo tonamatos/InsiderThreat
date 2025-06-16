@@ -1,0 +1,5178 @@
+[
+    {
+        "Index": 82,
+        "Score": 1.0,
+        "Marginals": {
+            "Exfiltration": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 330,
+        "Score": 1.0,
+        "Marginals": {
+            "Defense Evasion": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 341,
+        "Score": 1.0,
+        "Marginals": {
+            "Initial Access": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 387,
+        "Score": 1.0,
+        "Marginals": {
+            "Privilege Escalation": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 412,
+        "Score": 1.0,
+        "Marginals": {
+            "Privilege Escalation": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 555,
+        "Score": 1.0,
+        "Marginals": {
+            "Defense Evasion": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 606,
+        "Score": 1.0,
+        "Marginals": {
+            "Privilege Escalation": 1.0
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 413,
+        "Score": 0.9,
+        "Marginals": {
+            "Privilege Escalation": 0.9
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 431,
+        "Score": 0.9,
+        "Marginals": {
+            "Initial Access": 0.9
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 99,
+        "Score": 0.8,
+        "Marginals": {
+            "Privilege Escalation": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 143,
+        "Score": 0.8,
+        "Marginals": {
+            "Defense Evasion": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 248,
+        "Score": 0.8,
+        "Marginals": {
+            "Defense Evasion": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 298,
+        "Score": 0.8,
+        "Marginals": {
+            "Defense Evasion": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 331,
+        "Score": 0.8,
+        "Marginals": {
+            "Initial Access": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 446,
+        "Score": 0.8,
+        "Marginals": {
+            "Exfiltration": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 563,
+        "Score": 0.8,
+        "Marginals": {
+            "Exfiltration": 0.8
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 6,
+        "Score": 0.7347809293036839,
+        "Marginals": {
+            "Initial Access": 0.9902224536779601,
+            "Defense Evasion": 0.9891979517010111,
+            "Privilege Escalation": 0.9739631231029906,
+            "Collection": 0.9415065890166727,
+            "Exfiltration": 0.8773570787813143
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 58,
+        "Score": 0.7224043715846994,
+        "Marginals": {
+            "Collection": 0.8415300546448086,
+            "Exfiltration": 0.9508196721311475
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 39,
+        "Score": 0.7218575435302065,
+        "Marginals": {
+            "Initial Access": 0.899383058110043,
+            "Privilege Escalation": 0.937903995763811,
+            "Exfiltration": 0.8729792147806006
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 10,
+        "Score": 0.7066203791023399,
+        "Marginals": {
+            "Initial Access": 0.9479146856314983,
+            "Defense Evasion": 0.9925585487988646,
+            "Privilege Escalation": 0.9834410291644501,
+            "Collection": 0.820890126166236,
+            "Exfiltration": 0.8870930982073716
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 89,
+        "Score": 0.7,
+        "Marginals": {
+            "Collection": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 154,
+        "Score": 0.7,
+        "Marginals": {
+            "Defense Evasion": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 172,
+        "Score": 0.7,
+        "Marginals": {
+            "Collection": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 250,
+        "Score": 0.7,
+        "Marginals": {
+            "Collection": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 267,
+        "Score": 0.7,
+        "Marginals": {
+            "Collection": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 291,
+        "Score": 0.7,
+        "Marginals": {
+            "Initial Access": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 316,
+        "Score": 0.7,
+        "Marginals": {
+            "Exfiltration": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 353,
+        "Score": 0.7,
+        "Marginals": {
+            "Defense Evasion": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 354,
+        "Score": 0.7,
+        "Marginals": {
+            "Exfiltration": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 375,
+        "Score": 0.7,
+        "Marginals": {
+            "Defense Evasion": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 386,
+        "Score": 0.7,
+        "Marginals": {
+            "Defense Evasion": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 400,
+        "Score": 0.7,
+        "Marginals": {
+            "Collection": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 408,
+        "Score": 0.7,
+        "Marginals": {
+            "Collection": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 471,
+        "Score": 0.7,
+        "Marginals": {
+            "Exfiltration": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 475,
+        "Score": 0.7,
+        "Marginals": {
+            "Defense Evasion": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 511,
+        "Score": 0.7,
+        "Marginals": {
+            "Initial Access": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 513,
+        "Score": 0.7,
+        "Marginals": {
+            "Initial Access": 0.7
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 22,
+        "Score": 0.6965399949400362,
+        "Marginals": {
+            "Initial Access": 0.912453270145797,
+            "Privilege Escalation": 0.9584648427381107,
+            "Collection": 0.776130499796631,
+            "Exfiltration": 0.9304216295666184
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 23,
+        "Score": 0.6965399949400362,
+        "Marginals": {
+            "Initial Access": 0.912453270145797,
+            "Privilege Escalation": 0.9584648427381107,
+            "Collection": 0.776130499796631,
+            "Exfiltration": 0.9304216295666184
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 57,
+        "Score": 0.6809701492537314,
+        "Marginals": {
+            "Initial Access": 0.8880597014925374,
+            "Privilege Escalation": 0.9253731343283582
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 80,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 87,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 95,
+        "Score": 0.6,
+        "Marginals": {
+            "Privilege Escalation": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 121,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 123,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 126,
+        "Score": 0.6,
+        "Marginals": {
+            "Defense Evasion": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 145,
+        "Score": 0.6,
+        "Marginals": {
+            "Privilege Escalation": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 164,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 179,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 186,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 198,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 201,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 220,
+        "Score": 0.6,
+        "Marginals": {
+            "Privilege Escalation": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 252,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 271,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 277,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 288,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 324,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 348,
+        "Score": 0.6,
+        "Marginals": {
+            "Defense Evasion": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 377,
+        "Score": 0.6,
+        "Marginals": {
+            "Defense Evasion": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 385,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 398,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 444,
+        "Score": 0.6,
+        "Marginals": {
+            "Privilege Escalation": 0.6
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 469,
+        "Score": 0.6,
+        "Marginals": {
+            "Collection": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 479,
+        "Score": 0.6,
+        "Marginals": {
+            "Defense Evasion": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 484,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 494,
+        "Score": 0.6,
+        "Marginals": {
+            "Privilege Escalation": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 502,
+        "Score": 0.6,
+        "Marginals": {
+            "Collection": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 525,
+        "Score": 0.6,
+        "Marginals": {
+            "Privilege Escalation": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 528,
+        "Score": 0.6,
+        "Marginals": {
+            "Defense Evasion": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 538,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 539,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 562,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 576,
+        "Score": 0.6,
+        "Marginals": {
+            "Initial Access": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 584,
+        "Score": 0.6,
+        "Marginals": {
+            "Exfiltration": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 109,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 124,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 155,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 181,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 187,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 192,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 196,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 209,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 211,
+        "Score": 0.5,
+        "Marginals": {
+            "Collection": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 254,
+        "Score": 0.5,
+        "Marginals": {
+            "Initial Access": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 257,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 263,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 266,
+        "Score": 0.5,
+        "Marginals": {
+            "Collection": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 299,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 321,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 339,
+        "Score": 0.5,
+        "Marginals": {
+            "Initial Access": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 349,
+        "Score": 0.5,
+        "Marginals": {
+            "Initial Access": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 355,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 362,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 403,
+        "Score": 0.5,
+        "Marginals": {
+            "Collection": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 416,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 483,
+        "Score": 0.5,
+        "Marginals": {
+            "Exfiltration": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 487,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 503,
+        "Score": 0.5,
+        "Marginals": {
+            "Collection": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 506,
+        "Score": 0.5,
+        "Marginals": {
+            "Collection": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 514,
+        "Score": 0.5,
+        "Marginals": {
+            "Initial Access": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 550,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 554,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 574,
+        "Score": 0.5,
+        "Marginals": {
+            "Collection": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 577,
+        "Score": 0.5,
+        "Marginals": {
+            "Defense Evasion": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 608,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 611,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 612,
+        "Score": 0.5,
+        "Marginals": {
+            "Privilege Escalation": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 615,
+        "Score": 0.5,
+        "Marginals": {
+            "Initial Access": 0.5
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 64,
+        "Score": 0.4424418604651163,
+        "Marginals": {
+            "Defense Evasion": 0.5930232558139537,
+            "Initial Access": 0.8837209302325582
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 68,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 75,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 111,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 114,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 120,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 127,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 130,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 132,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 161,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 166,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 183,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 206,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 210,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 212,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 215,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 232,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 255,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 258,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 278,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 283,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 285,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 290,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 302,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 310,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 337,
+        "Score": 0.4,
+        "Marginals": {
+            "Privilege Escalation": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 359,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 372,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 376,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 388,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 419,
+        "Score": 0.4,
+        "Marginals": {
+            "Privilege Escalation": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 435,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 442,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 459,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 460,
+        "Score": 0.4,
+        "Marginals": {
+            "Privilege Escalation": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 486,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 491,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 499,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 505,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 509,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 510,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 521,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 526,
+        "Score": 0.4,
+        "Marginals": {
+            "Privilege Escalation": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 532,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 534,
+        "Score": 0.4,
+        "Marginals": {
+            "Exfiltration": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 558,
+        "Score": 0.4,
+        "Marginals": {
+            "Privilege Escalation": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 567,
+        "Score": 0.4,
+        "Marginals": {
+            "Initial Access": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 569,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 589,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 601,
+        "Score": 0.4,
+        "Marginals": {
+            "Defense Evasion": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 627,
+        "Score": 0.4,
+        "Marginals": {
+            "Collection": 0.4
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 59,
+        "Score": 0.36434977578475336,
+        "Marginals": {
+            "Defense Evasion": 0.8968609865470852,
+            "Collection": 0.11210762331838565
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 35,
+        "Score": 0.3500697350069735,
+        "Marginals": {
+            "Privilege Escalation": 0.8368200836820083,
+            "Initial Access": 0.23012552301255232
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 1,
+        "Score": 0.3116675518238259,
+        "Marginals": {
+            "Privilege Escalation": 0.8839721228017063,
+            "Defense Evasion": 0.5052646467684367,
+            "Collection": 0.0806197103848182,
+            "Exfiltration": 0.9659994589467809
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 78,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 81,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 98,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 131,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 141,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 146,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 148,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 152,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 156,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 162,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 174,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 176,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 190,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 195,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 197,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 230,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 237,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 241,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 242,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 244,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 253,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 268,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 282,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 300,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 305,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 306,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 311,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 312,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 313,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 328,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 335,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 342,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 346,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 347,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 356,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 360,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 379,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 383,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 390,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 395,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 404,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 407,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 411,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 417,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 430,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 434,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 440,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 447,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 450,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 452,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 462,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 464,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 468,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 493,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 512,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 517,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 520,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 524,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 527,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 530,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 531,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 540,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 551,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 552,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 553,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 557,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 561,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 565,
+        "Score": 0.3,
+        "Marginals": {
+            "Exfiltration": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 579,
+        "Score": 0.3,
+        "Marginals": {
+            "Privilege Escalation": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 580,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 582,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 591,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 593,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 597,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 600,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 617,
+        "Score": 0.3,
+        "Marginals": {
+            "Initial Access": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 624,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 628,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 630,
+        "Score": 0.3,
+        "Marginals": {
+            "Defense Evasion": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 631,
+        "Score": 0.3,
+        "Marginals": {
+            "Collection": 0.3
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 38,
+        "Score": 0.28960964408725604,
+        "Marginals": {
+            "Initial Access": 0.02870264064293915,
+            "Privilege Escalation": 0.9557979334098736
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 49,
+        "Score": 0.2873417721518987,
+        "Marginals": {
+            "Collection": 0.7215189873417721,
+            "Exfiltration": 0.34177215189873417
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 34,
+        "Score": 0.2848639455782313,
+        "Marginals": {
+            "Privilege Escalation": 0.7653061224489796,
+            "Collection": 0.12755102040816327
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 45,
+        "Score": 0.2429441062534588,
+        "Marginals": {
+            "Collection": 0.01383508577753182,
+            "Defense Evasion": 0.9075816270060875
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 60,
+        "Score": 0.224390243902439,
+        "Marginals": {
+            "Collection": 0.5609756097560975,
+            "Exfiltration": 0.5609756097560975
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 65,
+        "Score": 0.221875,
+        "Marginals": {
+            "Collection": 0.7083333333333334,
+            "Exfiltration": 0.1875
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 69,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 72,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 85,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 92,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 93,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 101,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 102,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 103,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 104,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 108,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 110,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 112,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 113,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 116,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 122,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 125,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 129,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 149,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 153,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 157,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 165,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 173,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 177,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 185,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 188,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 191,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 205,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 218,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 223,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 224,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 227,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 233,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 234,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 243,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 249,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 251,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 256,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 259,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 272,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 273,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 275,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 281,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 289,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 294,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 296,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 297,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 301,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 319,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 320,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 323,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 327,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 329,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 333,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 351,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 361,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 368,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 373,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 378,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 380,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 382,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 384,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 389,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 396,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 401,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 405,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 406,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 415,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 418,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 421,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 425,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 427,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 428,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 433,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 437,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 438,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 441,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 448,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 451,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 461,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 465,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 466,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 472,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 473,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 488,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 489,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 492,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 497,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 500,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 501,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 516,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 518,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 522,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 535,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 541,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 543,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 544,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 545,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 547,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 559,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 564,
+        "Score": 0.2,
+        "Marginals": {
+            "Exfiltration": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 570,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 571,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 594,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 598,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 599,
+        "Score": 0.2,
+        "Marginals": {
+            "Defense Evasion": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 605,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 609,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 610,
+        "Score": 0.2,
+        "Marginals": {
+            "Privilege Escalation": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 616,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 618,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 620,
+        "Score": 0.2,
+        "Marginals": {
+            "Initial Access": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 622,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 632,
+        "Score": 0.2,
+        "Marginals": {
+            "Collection": 0.2
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 61,
+        "Score": 0.1780821917808219,
+        "Marginals": {
+            "Privilege Escalation": 0.13698630136986303,
+            "Collection": 0.684931506849315
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 66,
+        "Score": 0.1780821917808219,
+        "Marginals": {
+            "Defense Evasion": 0.684931506849315,
+            "Collection": 0.13698630136986303
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 62,
+        "Score": 0.17745098039215684,
+        "Marginals": {
+            "Defense Evasion": 0.4509803921568627,
+            "Privilege Escalation": 0.5490196078431373
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 3,
+        "Score": 0.15711207432610444,
+        "Marginals": {
+            "Defense Evasion": 0.5940736459871478,
+            "Collection": 0.049355339879767,
+            "Initial Access": 0.46511192891777936
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 27,
+        "Score": 0.15563080553276384,
+        "Marginals": {
+            "Defense Evasion": 0.17998641629601722,
+            "Privilege Escalation": 0.4956510070710343,
+            "Exfiltration": 0.767669423723473
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 53,
+        "Score": 0.15088305200082308,
+        "Marginals": {
+            "Privilege Escalation": 0.7433344776290193,
+            "Initial Access": 0.444787168414559,
+            "Defense Evasion": 0.36503200346503684
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 36,
+        "Score": 0.14700454178362696,
+        "Marginals": {
+            "Collection": 0.7977757139269046,
+            "Defense Evasion": 0.16923924387652053,
+            "Exfiltration": 0.2520184399977653
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 46,
+        "Score": 0.13241711475431034,
+        "Marginals": {
+            "Privilege Escalation": 0.3542051426283406,
+            "Initial Access": 0.49769248141030875
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 16,
+        "Score": 0.12707821498627211,
+        "Marginals": {
+            "Initial Access": 0.024992850103403498,
+            "Defense Evasion": 0.6769117441271142,
+            "Privilege Escalation": 0.8296451132416877
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 55,
+        "Score": 0.1257396449704142,
+        "Marginals": {
+            "Exfiltration": 0.14792899408284024,
+            "Privilege Escalation": 0.591715976331361
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 26,
+        "Score": 0.12011343970417351,
+        "Marginals": {
+            "Defense Evasion": 0.6178152677143065,
+            "Collection": 0.19889895403271984,
+            "Initial Access": 0.28093176013407556
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 18,
+        "Score": 0.11706815588314168,
+        "Marginals": {
+            "Privilege Escalation": 0.22609170546252985,
+            "Exfiltration": 0.49293880576470694,
+            "Initial Access": 0.5849415069250486
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 0,
+        "Score": 0.11466159176224308,
+        "Marginals": {
+            "Initial Access": 0.006370971542435852,
+            "Privilege Escalation": 0.6175198392577376,
+            "Exfiltration": 0.9364866634411261,
+            "Collection": 0.07050010339624269
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 25,
+        "Score": 0.11050685379071098,
+        "Marginals": {
+            "Defense Evasion": 0.13718898292803805,
+            "Privilege Escalation": 0.7025557451083516,
+            "Collection": 0.3587394943745291
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 5,
+        "Score": 0.10607573904726246,
+        "Marginals": {
+            "Privilege Escalation": 0.030808491630876154,
+            "Defense Evasion": 0.6695167705440123
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 67,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 70,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 71,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 73,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 74,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 76,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 77,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 79,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 83,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 84,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 86,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 88,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 90,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 91,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 94,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 96,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 97,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 100,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 105,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 106,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 107,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 115,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 117,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 118,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 119,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 128,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 133,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 134,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 135,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 136,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 137,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 138,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 139,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 140,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 142,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 144,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 147,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 150,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 151,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 158,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 159,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 160,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 163,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 167,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 168,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 169,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 170,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 171,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 175,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 178,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 180,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 182,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 184,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 189,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 193,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 194,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 199,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 200,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 202,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 203,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 204,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 207,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 208,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 213,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 214,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 216,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 217,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 219,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 221,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 222,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 225,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 226,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 228,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 229,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 231,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 235,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 236,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 238,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 239,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 240,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 245,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 246,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 247,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 260,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 261,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 262,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 264,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 265,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 269,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 270,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 274,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 276,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 279,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 280,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 284,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 286,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 287,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 292,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 293,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 295,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 303,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 304,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 307,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 308,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 309,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 314,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 315,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 317,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 318,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 322,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 325,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 326,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 332,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 334,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 336,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 338,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 340,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 343,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 344,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 345,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 350,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 352,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 357,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 358,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 363,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 364,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 365,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 366,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 367,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 369,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 370,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 371,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 374,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 381,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 391,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 392,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 393,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 394,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 397,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 399,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 402,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 409,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 410,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 414,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 420,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 422,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 423,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 424,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 426,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 429,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 432,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 436,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 439,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 443,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 445,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 449,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 453,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 454,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 455,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 456,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 457,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 458,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 463,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 467,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 470,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 474,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 476,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 477,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 478,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 480,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 481,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 482,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 485,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 490,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 495,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 496,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 498,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 504,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 507,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 508,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 515,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 519,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 523,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 529,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 533,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 536,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 537,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 542,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 546,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 548,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 549,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 556,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 560,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 566,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 568,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 572,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 573,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 575,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 578,
+        "Score": 0.1,
+        "Marginals": {
+            "Defense Evasion": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 581,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 583,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 585,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 586,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 587,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 588,
+        "Score": 0.1,
+        "Marginals": {
+            "Exfiltration": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 590,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 592,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 595,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 596,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 602,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 603,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 604,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 607,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 613,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 614,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 619,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 621,
+        "Score": 0.1,
+        "Marginals": {
+            "Initial Access": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 623,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 625,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 626,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 629,
+        "Score": 0.1,
+        "Marginals": {
+            "Collection": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 633,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 634,
+        "Score": 0.1,
+        "Marginals": {
+            "Privilege Escalation": 0.1
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 44,
+        "Score": 0.0973635464263003,
+        "Marginals": {
+            "Privilege Escalation": 0.6340727982781565,
+            "Exfiltration": 0.19236553627423505,
+            "Defense Evasion": 0.4131612308401521
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 24,
+        "Score": 0.09654017857142859,
+        "Marginals": {
+            "Collection": 0.22321428571428575,
+            "Defense Evasion": 0.46874999999999994
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 63,
+        "Score": 0.09514925373134328,
+        "Marginals": {
+            "Collection": 0.42537313432835816,
+            "Exfiltration": 0.3134328358208956
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 30,
+        "Score": 0.09329159827372388,
+        "Marginals": {
+            "Defense Evasion": 0.40190346504381735,
+            "Initial Access": 0.19921474975307057,
+            "Collection": 0.3595624629445818
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 14,
+        "Score": 0.07580786339427133,
+        "Marginals": {
+            "Defense Evasion": 0.005465562584121663,
+            "Privilege Escalation": 0.7504268463249429
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 43,
+        "Score": 0.07463263727764888,
+        "Marginals": {
+            "Collection": 0.2610208816705336,
+            "Defense Evasion": 0.33642691415313225
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 40,
+        "Score": 0.07259887005649718,
+        "Marginals": {
+            "Defense Evasion": 0.288135593220339,
+            "Privilege Escalation": 0.16101694915254236
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 15,
+        "Score": 0.07177644914862992,
+        "Marginals": {
+            "Defense Evasion": 0.2492669681698223,
+            "Initial Access": 0.3675557449338556,
+            "Collection": 0.3769879300414642
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 13,
+        "Score": 0.06900998761401422,
+        "Marginals": {
+            "Initial Access": 0.006065127880737433,
+            "Defense Evasion": 0.7676424215376129,
+            "Privilege Escalation": 0.3556691830273094
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 41,
+        "Score": 0.06786565791202809,
+        "Marginals": {
+            "Initial Access": 0.22293352356994015,
+            "Privilege Escalation": 0.572117821540541
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 19,
+        "Score": 0.06225680933852141,
+        "Marginals": {
+            "Exfiltration": 0.1945525291828794,
+            "Privilege Escalation": 0.19455252918287935
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 52,
+        "Score": 0.058635275970891174,
+        "Marginals": {
+            "Collection": 0.4499755595894011,
+            "Exfiltration": 0.23953508471018808,
+            "Defense Evasion": 0.16959651564834383
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 48,
+        "Score": 0.05530164533820841,
+        "Marginals": {
+            "Privilege Escalation": 0.045703839122486295,
+            "Initial Access": 0.5073126142595978
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 37,
+        "Score": 0.05266083090176463,
+        "Marginals": {
+            "Privilege Escalation": 0.020842017507294707,
+            "Exfiltration": 0.5127136306794498
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 50,
+        "Score": 0.0438136826783115,
+        "Marginals": {
+            "Initial Access": 0.0829694323144105,
+            "Defense Evasion": 0.3275109170305676
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 21,
+        "Score": 0.04055365027057585,
+        "Marginals": {
+            "Initial Access": 0.008364761119879957,
+            "Defense Evasion": 0.4901911061424382
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 12,
+        "Score": 0.037826340609655305,
+        "Marginals": {
+            "Collection": 0.03281637415528222,
+            "Defense Evasion": 0.510112304924887
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 54,
+        "Score": 0.03686440677966102,
+        "Marginals": {
+            "Collection": 0.16101694915254236,
+            "Exfiltration": 0.288135593220339
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 2,
+        "Score": 0.0322652254836574,
+        "Marginals": {
+            "Privilege Escalation": 0.09171381993192018,
+            "Initial Access": 0.25298100217211245,
+            "Exfiltration": 0.23778975591644638
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 32,
+        "Score": 0.02995396317053644,
+        "Marginals": {
+            "Defense Evasion": 0.005604483586869498,
+            "Privilege Escalation": 0.39191353082465985
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 4,
+        "Score": 0.02590278793682036,
+        "Marginals": {
+            "Exfiltration": 0.0003324777572380409,
+            "Defense Evasion": 0.5171691513837725
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 28,
+        "Score": 0.025636337788987294,
+        "Marginals": {
+            "Privilege Escalation": 0.09598062747934805,
+            "Defense Evasion": 0.2576084917247075
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 20,
+        "Score": 0.02428558751868114,
+        "Marginals": {
+            "Privilege Escalation": 0.11589717562996155,
+            "Collection": 0.027653809817220876
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 56,
+        "Score": 0.019455252918287935,
+        "Marginals": {
+            "Exfiltration": 0.19455252918287935,
+            "Privilege Escalation": 0.19455252918287935
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 47,
+        "Score": 0.019387116948092552,
+        "Marginals": {
+            "Privilege Escalation": 0.20637898686679174,
+            "Initial Access": 0.09380863039399621
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 9,
+        "Score": 0.018110385388967275,
+        "Marginals": {
+            "Initial Access": 0.0425971509407424,
+            "Defense Evasion": 0.40506870828615815
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 11,
+        "Score": 0.014101265822784809,
+        "Marginals": {
+            "Collection": 0.0430379746835443,
+            "Exfiltration": 0.14556962025316458
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 51,
+        "Score": 0.009156118143459917,
+        "Marginals": {
+            "Collection": 0.04303797468354431,
+            "Exfiltration": 0.14556962025316458
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 33,
+        "Score": 0.00888656560376372,
+        "Marginals": {
+            "Collection": 0.026136957658128592,
+            "Defense Evasion": 0.21432305279665445
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 31,
+        "Score": 0.008451600170284674,
+        "Marginals": {
+            "Privilege Escalation": 0.017341132568725208,
+            "Defense Evasion": 0.25135834396776086
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 17,
+        "Score": 0.008378605139788347,
+        "Marginals": {
+            "Initial Access": 0.0018598905006170163,
+            "Privilege Escalation": 0.40963080448633227
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 7,
+        "Score": 0.008295635000708856,
+        "Marginals": {
+            "Initial Access": 0.007393291444874031,
+            "Defense Evasion": 0.40901860270404294
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 42,
+        "Score": 0.006109510086455331,
+        "Marginals": {
+            "Collection": 0.019596541786743516,
+            "Exfiltration": 0.1440922190201729
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 8,
+        "Score": 0.003626184216048424,
+        "Marginals": {
+            "Privilege Escalation": 3.6814052954806335e-05,
+            "Initial Access": 0.2173869826981314
+        },
+        "Priority": "Low"
+    },
+    {
+        "Index": 29,
+        "Score": 0.0036238795966751585,
+        "Marginals": {
+            "Exfiltration": 0.036238795966751586,
+            "Collection": 0.036238795966751586
+        },
+        "Priority": "Low"
+    }
+]

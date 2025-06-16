@@ -97,6 +97,5 @@ class App(tk.Tk):
 if __name__ == "__main__":
     app = App()
     #app.update_image('test.png')
-    app.update_user_feedback({"Initial Access": True, "Privilege Escalation": False, "Collection": False, "Exfiltration": True, "Defense Evasion": True})
-    print (app.check_collection.state)
+    #app.update_user_feedback({"Initial Access": True, "Privilege Escalation": False, "Collection": False, "Exfiltration": True, "Defense Evasion": True})
     app.mainloop()

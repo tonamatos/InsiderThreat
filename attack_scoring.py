@@ -1,7 +1,8 @@
-from typing import List
+from typing import List, Dict
 
 import json
 from json.decoder import JSONDecodeError
+from copy import deepcopy
 
 from factor_graph import FactorGraph
 from config import *
@@ -70,13 +71,16 @@ class ScoreCalculator:
 class EventsDataTracker:
     """ Class to establish an interface between storing and accessing event data """
     def __init__(self, events: List):
-        self.events = events 
+        self.events = deepcopy(events)
 
     def sort_by_score(self):
         self.events.sort(key=lambda x: x["Score"], reverse=True)
     
     def sort_by_size(self):
         self.events.sort(key=lambda x: x["Index"]) # Index is already sorted by size
+
+    def add_event(self, event: Dict):
+        self.events.append(event)
 
     def assign_priorities(self):
         """ Assume events is sorted by score """

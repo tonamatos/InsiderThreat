@@ -6,21 +6,8 @@ from data_loader import data_load_into_graph as load
 from utils import save_graph, load_graph, plot_graph
 from factor_graph import *
 from config import IMAGES_DIRECTORY, DEFAULT_SCORES_PATH_JSON
-from attack_scoring import ScoreCalculator
+from attack_scoring import ScoreCalculator, EventsDataTracker
 
-HIGH_PRIORITY = 0.1 # TOP 10%
-MED_PRIORITY = 0.25 # NEXT 25 %
-
-def assign_priorities(events: List):
-  """ Assume events is sorted by score """
-  high_index_threshold = int(len(events) * HIGH_PRIORITY)
-  med_index_threshold = int(len(events) * (HIGH_PRIORITY + MED_PRIORITY))
-  for i in range(high_index_threshold):
-    events[i]["Priority"] = "High"
-  for i in range(high_index_threshold, med_index_threshold):
-    events[i]["Priority"] = "Med"
-  for i in range(med_index_threshold, len(events)):
-    events[i]["Priority"] = "Low"
 
 # STEP 1: Load data as a graph and a dictionary
 print("Loading data...")
@@ -44,7 +31,6 @@ components.sort(key=len, reverse=True)
 print("There are", len(components), "subgraphs.")
 
 all_event_subgraphs = []
-export_data = [] # this is the data that is saved DEFAULT_SCORES_PATH_JSON
 
 for i, component in enumerate(components):
   subgraph = H.subgraph(component)
@@ -63,18 +49,10 @@ for i, component in enumerate(components):
                     "Priority"    : None}
   all_event_subgraphs.append(event_subgraph)
 
-  event_data = {"Index": i,
-                "Marginals": marginals,
-                "Score": score,
-                "Priority": None}
-  export_data.append(event_data)
+ev_data_tracker = EventsDataTracker(all_event_subgraphs)
+ev_data_tracker.assign_priorities()
+ev_data_tracker.export_to_json()
 
-all_event_subgraphs.sort(key=lambda x: x["Score"], reverse=True)
-export_data.sort(key=lambda x: x["Score"], reverse=True) # sort incidents by score
-assign_priorities(all_event_subgraphs)
-assign_priorities(export_data)
-with open(DEFAULT_SCORES_PATH_JSON, mode="w") as file:
-  json.dump(export_data, file, indent=4)
 
 for event_subgraph in all_event_subgraphs:
   subgraph = event_subgraph["Subgraph"]

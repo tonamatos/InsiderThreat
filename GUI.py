@@ -159,6 +159,7 @@ class App(tk.Tk):
             self.host_info_container.config(state="normal")
             self.host_info_container.delete("1.0", tk.END)
             self.host_info_container.insert(tk.END, f"Event index: \t\t{selected_index}")
+            self.host_info_container.insert(tk.END, "\n\n"+"="*20+ " HOSTS " + "="*20+"\n")
             for node in subgraph.nodes():
                 for neighbor in main.G.neighbors(node):
                     if main.G.nodes[neighbor].get("type") == "Host":

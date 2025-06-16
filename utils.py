@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import os
 from PIL import Image, ImageDraw, ImageFont
 import os
+import textwrap
 
 def create_placeholder_graph() -> None:
   # Create a blank white image
@@ -67,6 +68,11 @@ def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> 
 
   plt.figure(figsize=(12, 8))
   pos = nx.circular_layout(subgraph)
+  #pos = {k: v * 0.15 for k, v in pos.items()}
+
+  pos = {k: v * 0.8 for k, v in pos.items()}
+
+  
 
   edge_labels = {}
   for u, v, d in subgraph.edges(data=True):
@@ -75,14 +81,20 @@ def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> 
       ip_list = [ip.strip() for ip in raw.split(",") if ip.strip()]
       edge_labels[(u, v)] = "\n".join(ip_list)  # Multiple lines
 
+  wrapped_node_labels = {
+    node: "\n".join(textwrap.wrap(label, width=20))
+    for node, label in node_labels.items()}
+
+
   nx.draw(
       subgraph, pos,
-      labels=node_labels,
+      labels=wrapped_node_labels,
       with_labels=True,
       node_size=node_sizes,
       node_color='lightblue',
       edge_color='gray',
-      width=edge_weights
+      width=edge_weights,
+      font_size=8
   )
 
   nx.draw_networkx_edge_labels(subgraph, pos, edge_labels=edge_labels, font_size=8)
@@ -90,9 +102,9 @@ def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> 
   if save_path:
     os.makedirs(os.path.dirname(save_path), exist_ok=True)
     plt.savefig(save_path, format="png")
-    plt.close()
   else:
     plt.show()
+  plt.close()
 
 if __name__ == "__main__":
   create_placeholder_graph()

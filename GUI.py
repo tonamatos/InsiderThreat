@@ -56,7 +56,7 @@ class App(tk.Tk):
     def update_image(self, path):
         self.attack_image.config(file=path)
         
-    def update_user_feedback(self, dict):
+    def update_user_feedback(self, dct):
 
         self.bool_initial_access.set(False)
         self.bool_privilege_escalation.set(False)
@@ -65,10 +65,10 @@ class App(tk.Tk):
         self.bool_defense_evasion.set(False)
 
         self.tactic_statuses = {}
-        for tactic in dict:
-            if dict[tactic]:
+        for tactic in dct:
+            if dct[tactic]:
                 self.tactic_statuses[tactic] = 'enabled'
-            if not dict[tactic]:
+            if not dct[tactic]:
                 self.tactic_statuses[tactic] = 'disabled'
 
         self.check_initial_access.config(state=self.tactic_statuses['Initial Access'])

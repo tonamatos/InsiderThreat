@@ -1,6 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
-from config import GUI_WINDOW_DIMENSIONS
+from config import GUI_WINDOW_DIMENSIONS, IMAGES_DIRECTORY
 import user_feedback
 import subprocess
 import main
@@ -82,7 +82,7 @@ class App(tk.Tk):
         # Populate dropdown
         self.all_event_subgraphs = sorted(main.all_event_subgraphs, key=lambda sg: sg["Score"], reverse=True)
         #self.subgraph_dropdown["values"] = ["Event "+str(sg["Index"])+" | Score: "+str(sg["Score"]) for sg in self.all_event_subgraphs]
-        self.subgraph_dropdown["values"] = [sg["Index"] for sg in self.all_event_subgraphs]
+        self.subgraph_dropdown["values"] = [sg["Index"] for sg in self.all_event_subgraphs if sg["Index"] < main.GRAPH_DISPLAY_CUTOFF]
         self.subgraph_dropdown.bind("<<ComboboxSelected>>", self.on_dropdown_select)
     
     def update_image(self, path):
@@ -130,10 +130,10 @@ class App(tk.Tk):
         if selected_subgraph:
             # Update image path
             if int(selected_index) < main.GRAPH_DISPLAY_CUTOFF:
-                image_path = f"graph_plots/event_subgraph_{selected_index}.png"
+                image_path = IMAGES_DIRECTORY + f"event_subgraph_{selected_index}.png"
                 self.update_image(image_path)
             else:
-                self.attack_image.config(file="graph_plots/placeholder.png")
+                self.attack_image.config(file=IMAGES_DIRECTORY + "placeholder.png")
 
 
             # Display basic info

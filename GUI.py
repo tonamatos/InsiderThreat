@@ -74,6 +74,11 @@ class App(tk.Tk):
 
         self.info_scrollbar.config(command=self.subgraph_info_box.yview)
 
+        self.host_info_container = tk.Text(info_frame, width=50, height=15, wrap="word", yscrollcommand=self.info_scrollbar.set)
+        self.host_info_container.pack(side="bottom", fill="both")
+
+
+
         # Populate dropdown
         self.all_event_subgraphs = sorted(main.all_event_subgraphs, key=lambda sg: sg["Score"], reverse=True)
         #self.subgraph_dropdown["values"] = ["Event "+str(sg["Index"])+" | Score: "+str(sg["Score"]) for sg in self.all_event_subgraphs]
@@ -134,11 +139,11 @@ class App(tk.Tk):
             # Display basic info
             self.subgraph_info_box.config(state="normal")
             self.subgraph_info_box.delete("1.0", tk.END)
-            self.subgraph_info_box.insert(tk.END, f"Event index: \t\t{selected_index}")
-            score = selected_subgraph["Score"]
-            self.subgraph_info_box.insert(tk.END, f"\nSeverity score: \t{score}")
+            self.subgraph_info_box.insert(tk.END, f"Alert index: \t\t{selected_index}")
+            score = selected_subgraph["Priority"]
+            self.subgraph_info_box.insert(tk.END, f"\tPriority: \t{score}")
             subgraph = selected_subgraph["Subgraph"]
-            self.subgraph_info_box.insert(tk.END, "\n\n"+"="*20+ " NODES " + "="*20+"\n")
+            self.subgraph_info_box.insert(tk.END, "\n\n"+"="*20+ " ALERTS " + "="*20+"\n")
             for node in subgraph.nodes():
                 desc = subgraph.nodes[node].get("description", "[Missing description]")
                 type = subgraph.nodes[node].get("type", "[Missing type]")
@@ -149,7 +154,11 @@ class App(tk.Tk):
                 self.subgraph_info_box.insert(tk.END, f"\nMessage: \t{message}")
                 self.subgraph_info_box.insert(tk.END, f"\nTimestamp: \t{timestamp}")
                 self.subgraph_info_box.insert(tk.END, "\n"+"-"*50)
-            self.subgraph_info_box.insert(tk.END, "\n\n"+"="*20+ " HOSTS " + "="*20+"\n")
+            self.subgraph_info_box.config(state="disabled")
+
+            self.host_info_container.config(state="normal")
+            self.host_info_container.delete("1.0", tk.END)
+            self.host_info_container.insert(tk.END, f"Event index: \t\t{selected_index}")
             for node in subgraph.nodes():
                 for neighbor in main.G.neighbors(node):
                     if main.G.nodes[neighbor].get("type") == "Host":
@@ -158,15 +167,12 @@ class App(tk.Tk):
                         os_type = host_props["os_type"]
                         department = host_props["department"]
                         host_name = main.G.nodes[neighbor].get("name", {})
-                        self.subgraph_info_box.insert(tk.END, f"\nName: \t\t{host_name}")
-                        self.subgraph_info_box.insert(tk.END, f"\nIP address: \t{ip_address}")
-                        self.subgraph_info_box.insert(tk.END, f"\nOS type: \t\t{os_type}")
-                        self.subgraph_info_box.insert(tk.END, f"\nDepartment: \t{department}")
-                        self.subgraph_info_box.insert(tk.END, "\n"+"-"*50)
-
-
-            self.subgraph_info_box.config(state="disabled")
-
+                        self.host_info_container.insert(tk.END, f"\nName: \t\t{host_name}")
+                        self.host_info_container.insert(tk.END, f"\nIP address: \t{ip_address}")
+                        self.host_info_container.insert(tk.END, f"\nOS type: \t\t{os_type}")
+                        self.host_info_container.insert(tk.END, f"\nDepartment: \t{department}")
+                        self.host_info_container.insert(tk.END, "\n"+"-"*50)
+            self.host_info_container.config(state="disabled")
 
     def load_system_data(self):
         subprocess.run(["python", "main.py"])

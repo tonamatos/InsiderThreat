@@ -49,9 +49,9 @@ for i, component in enumerate(components):
                     "Priority"    : None}
   all_event_subgraphs.append(event_subgraph)
 
-#ev_data_tracker = EventsDataTracker(all_event_subgraphs)
-#ev_data_tracker.assign_priorities()
-#ev_data_tracker.export_to_json()
+ev_data_tracker = EventsDataTracker(all_event_subgraphs)
+ev_data_tracker.assign_priorities()
+ev_data_tracker.export_to_json()
 
 
 for event_subgraph in all_event_subgraphs:

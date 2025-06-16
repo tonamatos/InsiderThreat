@@ -28,7 +28,8 @@ class ScoreCalculator:
         score = 0
         for alert in self.alerts:
             score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]] * WEIGHT_PARAMETERS[EVENT_TYPE_TO_MITRE[alert['type']][0]]
-        self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
+        # self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
+        self.score = score
         return float(self.score)
     
     def check_computations(self):

@@ -6,7 +6,7 @@ DATA_FILEPATH         = "security_data_assignment.json" # This file is gitignore
 DEFAULT_SCORES_PATH_TXT = "scores/scores.txt"
 DEFAULT_SCORES_PATH_JSON = "scores/scores.json"
 IMAGES_DIRECTORY      = "graph_plots/"                  # Directory contents are gitignored
-WEIGHT_PARAMATER_ADJUST_AMOUNT = 0.
+WEIGHT_PARAMATER_ADJUST_AMOUNT = 0.01
 
 HIGH_PRIORITY = 0.1 # Top 10% of alerts are high priority
 MED_PRIORITY = 0.25 # Next 25% of alerts are medium. Remaining are low priority

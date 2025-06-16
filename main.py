@@ -3,7 +3,7 @@ import json
 
 from attack_correlation import *
 from data_loader import data_load_into_graph as load
-from utils import save_graph, load_graph, plot_graph
+from utils import save_graph, load_graph, plot_graph, create_placeholder_graph
 from factor_graph import *
 from config import IMAGES_DIRECTORY, DEFAULT_SCORES_PATH_JSON
 from attack_scoring import ScoreCalculator
@@ -28,6 +28,7 @@ else:
 components = list(nx.connected_components(H.to_undirected()))
 components.sort(key=len, reverse=True)
 print("There are", len(components), "subgraphs.")
+print("Creating images...")
 
 all_event_subgraphs = []
 export_data = [] # this is the data that is saved DEFAULT_SCORES_PATH_JSON
@@ -62,10 +63,12 @@ for event_subgraph in all_event_subgraphs:
 
   # If you don't want 600+ images of a single node...
   if subgraph.number_of_edges() == 0:
+    GRAPH_DISPLAY_CUTOFF = event_subgraph["Index"]
     break # since after this they all have zero edges
 
   index = event_subgraph["Index"]
   save_path = IMAGES_DIRECTORY + f"event_subgraph_{index}.png"
-  plot_graph(subgraph, node_label="description", save_path=save_path)
+  #plot_graph(subgraph, node_label="description", save_path=save_path)
 
+create_placeholder_graph()
 print("Done creating images.")

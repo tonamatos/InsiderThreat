@@ -2,6 +2,30 @@ import pickle
 import networkx as nx
 import matplotlib.pyplot as plt
 import os
+from PIL import Image, ImageDraw, ImageFont
+import os
+
+def create_placeholder_graph() -> None:
+  # Create a blank white image
+  width, height = 600, 400
+  placeholder = Image.new("RGB", (width, height), color="white")
+  draw = ImageDraw.Draw(placeholder)
+
+  text = "Single node graph -\nno image generated."
+
+  font = ImageFont.truetype("arial.ttf", size=48)
+
+  bbox = draw.textbbox((0, 0), text, font=font)
+  text_width = bbox[2] - bbox[0]
+  text_height = bbox[3] - bbox[1]
+  text_position = ((width - text_width) // 2, (height - text_height) // 2)
+
+  # Draw text
+  draw.text(text_position, text, fill="gray", font=font)
+
+  # Save to correct path
+  os.makedirs("graph_plots", exist_ok=True)
+  placeholder.save("graph_plots/placeholder.png")
 
 def save_graph(graph: nx.Graph, filename: str) -> None:
   """
@@ -69,3 +93,6 @@ def plot_graph(subgraph: nx.Graph, node_label="description", save_path=None) -> 
     plt.close()
   else:
     plt.show()
+
+if __name__ == "__main__":
+  create_placeholder_graph()

@@ -2,13 +2,15 @@ import tkinter as tk
 from tkinter import ttk
 from config import GUI_WINDOW_DIMENSIONS
 import user_feedback
+import subprocess
+import main
 
 class App(tk.Tk):
     def __init__(self):
         #basic setup
         super().__init__()
         self.geometry(GUI_WINDOW_DIMENSIONS)
-        self.resizable(False,False)
+        self.resizable(True,True)
         self.title("Attack Graph Viewer")
 
         #image setup
@@ -47,9 +49,34 @@ class App(tk.Tk):
 
         #dropdown setup
         self.dropdown_container = ttk.Labelframe(self, text='Attack Graph Selection')
-        self.dropdown_container.grid(column=0, padx=20, pady=20)
+        self.dropdown_container.grid(row=0, column=0, padx=20, pady=20, rowspan=30)
 
-        #Tona's code goes here
+        # --- Tona's code goes here ---
+
+        self.load_button = ttk.Button(self.dropdown_container, text='Reload data', command=self.load_system_data)
+        self.load_button.grid(row=0, column=0, pady=10)
+
+        self.subgraph_var = tk.StringVar()
+        self.subgraph_dropdown = ttk.Combobox(self.dropdown_container, textvariable=self.subgraph_var, state="readonly")
+        self.subgraph_dropdown.grid(row=1, column=0)
+
+        # Scrollable info box
+        info_frame = tk.Frame(self.dropdown_container)
+        info_frame.grid(row=2, column=0, pady=10)
+
+        self.info_scrollbar = ttk.Scrollbar(info_frame)
+        self.info_scrollbar.pack(side="right", fill="y")
+
+        self.subgraph_info_box = tk.Text(info_frame, width=50, height=15, wrap="word", yscrollcommand=self.info_scrollbar.set)
+        self.subgraph_info_box.pack(side="left", fill="both")
+
+        self.info_scrollbar.config(command=self.subgraph_info_box.yview)
+
+        # Populate dropdown
+        self.all_event_subgraphs = sorted(main.all_event_subgraphs, key=lambda sg: sg["Score"], reverse=True)
+        #self.subgraph_dropdown["values"] = ["Event "+str(sg["Index"])+" | Score: "+str(sg["Score"]) for sg in self.all_event_subgraphs]
+        self.subgraph_dropdown["values"] = [sg["Index"] for sg in self.all_event_subgraphs]
+        self.subgraph_dropdown.bind("<<ComboboxSelected>>", self.on_dropdown_select)
     
     def update_image(self, path):
         self.attack_image.config(file=path)
@@ -82,6 +109,57 @@ class App(tk.Tk):
                        "Exfiltration": self.bool_exfiltration.get(), 
                        "Defense Evasion": self.bool_defense_evasion.get()})
 
+    def on_dropdown_select(self, event=None):
+        selected_index = self.subgraph_var.get()
+        selected_subgraph = next((sg for sg in self.all_event_subgraphs if str(sg["Index"]) == selected_index), None)
+        if selected_subgraph:
+            # Update image path
+            if int(selected_index) < main.GRAPH_DISPLAY_CUTOFF:
+                image_path = f"graph_plots/event_subgraph_{selected_index}.png"
+                self.update_image(image_path)
+            else:
+                self.attack_image.config(file="graph_plots/placeholder.png")
+
+
+            # Display basic info
+            self.subgraph_info_box.config(state="normal")
+            self.subgraph_info_box.delete("1.0", tk.END)
+            self.subgraph_info_box.insert(tk.END, f"Event index: \t\t{selected_index}")
+            score = selected_subgraph["Score"]
+            self.subgraph_info_box.insert(tk.END, f"\nSeverity score: \t{score}")
+            subgraph = selected_subgraph["Subgraph"]
+            self.subgraph_info_box.insert(tk.END, "\n\n"+"="*20+ " NODES " + "="*20+"\n")
+            for node in subgraph.nodes():
+                desc = subgraph.nodes[node].get("description", "[Missing description]")
+                type = subgraph.nodes[node].get("type", "[Missing type]")
+                message = subgraph.nodes[node].get("alert_message", "[Missing message]")
+                timestamp = subgraph.nodes[node].get("timestamp", "[Missing timestamp]")
+                self.subgraph_info_box.insert(tk.END, f"\nDescription: \t{desc}")
+                self.subgraph_info_box.insert(tk.END, f"\nType: \t{type}")
+                self.subgraph_info_box.insert(tk.END, f"\nMessage: \t{message}")
+                self.subgraph_info_box.insert(tk.END, f"\nTimestamp: \t{timestamp}")
+                self.subgraph_info_box.insert(tk.END, "\n"+"-"*50)
+            self.subgraph_info_box.insert(tk.END, "\n\n"+"="*20+ " HOSTS " + "="*20+"\n")
+            for node in subgraph.nodes():
+                for neighbor in main.G.neighbors(node):
+                    if main.G.nodes[neighbor].get("type") == "Host":
+                        host_props = main.G.nodes[neighbor].get("properties", {})
+                        ip_address = host_props["ip_address"]
+                        os_type = host_props["os_type"]
+                        department = host_props["department"]
+                        host_name = main.G.nodes[neighbor].get("name", {})
+                        self.subgraph_info_box.insert(tk.END, f"\nName: \t\t{host_name}")
+                        self.subgraph_info_box.insert(tk.END, f"\nIP address: \t{ip_address}")
+                        self.subgraph_info_box.insert(tk.END, f"\nOS type: \t\t{os_type}")
+                        self.subgraph_info_box.insert(tk.END, f"\nDepartment: \t{department}")
+                        self.subgraph_info_box.insert(tk.END, "\n"+"-"*50)
+
+
+            self.subgraph_info_box.config(state="disabled")
+
+
+    def load_system_data(self):
+        subprocess.run(["python", "main.py"])
 
 
 if __name__ == "__main__":

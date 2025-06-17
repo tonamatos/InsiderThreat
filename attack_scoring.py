@@ -28,8 +28,7 @@ class ScoreCalculator:
         score = 0
         for alert in self.alerts:
             score += alert['severity'] * self.fg.marginals[EVENT_TYPE_TO_MITRE[alert['type']][0]] * WEIGHT_PARAMETERS[EVENT_TYPE_TO_MITRE[alert['type']][0]]
-        # self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
-        self.score = score
+        self.score = score / (10 * len(self.alerts)) # 10 * len(alerts) is the maximum possible score so normalise by that
         return float(self.score)
     
     def check_computations(self):
@@ -74,8 +73,10 @@ class EventsDataTracker:
     def __init__(self, events: List):
         self.events = deepcopy(events)
 
-    def sort_by_score(self):
+    def sort_by_score(self, return_copy=False):
         self.events.sort(key=lambda x: x["Score"], reverse=True)
+        if return_copy:
+            return deepcopy(self.events)
     
     def sort_by_size(self):
         self.events.sort(key=lambda x: x["Index"]) # Index is already sorted by size

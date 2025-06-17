@@ -1,5 +1,529 @@
 [
     {
+        "Index": 6,
+        "Score": 43.645987200638814,
+        "Marginals": {
+            "Initial Access": 0.9902224536779601,
+            "Defense Evasion": 0.9891979517010111,
+            "Privilege Escalation": 0.9739631231029906,
+            "Collection": 0.9415065890166727,
+            "Exfiltration": 0.8773570787813143
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 10,
+        "Score": 34.97770876556583,
+        "Marginals": {
+            "Initial Access": 0.9479146856314983,
+            "Defense Evasion": 0.9925585487988646,
+            "Privilege Escalation": 0.9834410291644501,
+            "Collection": 0.820890126166236,
+            "Exfiltration": 0.8870930982073716
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 22,
+        "Score": 27.582983799625435,
+        "Marginals": {
+            "Initial Access": 0.912453270145797,
+            "Privilege Escalation": 0.9584648427381107,
+            "Collection": 0.776130499796631,
+            "Exfiltration": 0.9304216295666184
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 23,
+        "Score": 27.582983799625435,
+        "Marginals": {
+            "Initial Access": 0.912453270145797,
+            "Privilege Escalation": 0.9584648427381107,
+            "Collection": 0.776130499796631,
+            "Exfiltration": 0.9304216295666184
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 1,
+        "Score": 21.598561341391132,
+        "Marginals": {
+            "Privilege Escalation": 0.8839721228017063,
+            "Defense Evasion": 0.5052646467684367,
+            "Collection": 0.0806197103848182,
+            "Exfiltration": 0.9659994589467809
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 39,
+        "Score": 21.439169042847134,
+        "Marginals": {
+            "Initial Access": 0.899383058110043,
+            "Privilege Escalation": 0.937903995763811,
+            "Exfiltration": 0.8729792147806006
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 58,
+        "Score": 14.303606557377048,
+        "Marginals": {
+            "Collection": 0.8415300546448086,
+            "Exfiltration": 0.9508196721311475
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 57,
+        "Score": 13.483208955223882,
+        "Marginals": {
+            "Initial Access": 0.8880597014925374,
+            "Privilege Escalation": 0.9253731343283582
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 3,
+        "Score": 10.887866750799038,
+        "Marginals": {
+            "Defense Evasion": 0.5940736459871478,
+            "Collection": 0.049355339879767,
+            "Initial Access": 0.46511192891777936
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 35,
+        "Score": 10.397071129707111,
+        "Marginals": {
+            "Privilege Escalation": 0.8368200836820083,
+            "Initial Access": 0.23012552301255232
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 0,
+        "Score": 10.21634782601586,
+        "Marginals": {
+            "Initial Access": 0.006370971542435852,
+            "Privilege Escalation": 0.6175198392577376,
+            "Exfiltration": 0.9364866634411261,
+            "Collection": 0.07050010339624269
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 64,
+        "Score": 8.760348837209303,
+        "Marginals": {
+            "Defense Evasion": 0.5930232558139537,
+            "Initial Access": 0.8837209302325582
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 38,
+        "Score": 8.601406429391503,
+        "Marginals": {
+            "Initial Access": 0.02870264064293915,
+            "Privilege Escalation": 0.9557979334098736
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 49,
+        "Score": 8.534050632911391,
+        "Marginals": {
+            "Collection": 0.7215189873417721,
+            "Exfiltration": 0.34177215189873417
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 34,
+        "Score": 8.460459183673468,
+        "Marginals": {
+            "Privilege Escalation": 0.7653061224489796,
+            "Collection": 0.12755102040816327
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 45,
+        "Score": 7.215439955727725,
+        "Marginals": {
+            "Collection": 0.01383508577753182,
+            "Defense Evasion": 0.9075816270060875
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 59,
+        "Score": 7.2141255605381165,
+        "Marginals": {
+            "Defense Evasion": 0.8968609865470852,
+            "Collection": 0.11210762331838565
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 5,
+        "Score": 6.300898899407391,
+        "Marginals": {
+            "Privilege Escalation": 0.030808491630876154,
+            "Defense Evasion": 0.6695167705440123
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 16,
+        "Score": 6.290371641820469,
+        "Marginals": {
+            "Initial Access": 0.024992850103403498,
+            "Defense Evasion": 0.6769117441271142,
+            "Privilege Escalation": 0.8296451132416877
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 27,
+        "Score": 6.162979899097449,
+        "Marginals": {
+            "Defense Evasion": 0.17998641629601722,
+            "Privilege Escalation": 0.4956510070710343,
+            "Exfiltration": 0.767669423723473
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 18,
+        "Score": 5.794873716215513,
+        "Marginals": {
+            "Privilege Escalation": 0.22609170546252985,
+            "Exfiltration": 0.49293880576470694,
+            "Initial Access": 0.5849415069250486
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 26,
+        "Score": 4.756492212285272,
+        "Marginals": {
+            "Defense Evasion": 0.6178152677143065,
+            "Collection": 0.19889895403271984,
+            "Initial Access": 0.28093176013407556
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 53,
+        "Score": 4.481226644424446,
+        "Marginals": {
+            "Privilege Escalation": 0.7433344776290193,
+            "Initial Access": 0.444787168414559,
+            "Defense Evasion": 0.36503200346503684
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 60,
+        "Score": 4.442926829268292,
+        "Marginals": {
+            "Collection": 0.5609756097560975,
+            "Exfiltration": 0.5609756097560975
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 65,
+        "Score": 4.3931249999999995,
+        "Marginals": {
+            "Collection": 0.7083333333333334,
+            "Exfiltration": 0.1875
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 25,
+        "Score": 4.376071410112155,
+        "Marginals": {
+            "Defense Evasion": 0.13718898292803805,
+            "Privilege Escalation": 0.7025557451083516,
+            "Collection": 0.3587394943745291
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 36,
+        "Score": 4.3660348909737206,
+        "Marginals": {
+            "Collection": 0.7977757139269046,
+            "Defense Evasion": 0.16923924387652053,
+            "Exfiltration": 0.2520184399977653
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 46,
+        "Score": 3.9327883082030173,
+        "Marginals": {
+            "Privilege Escalation": 0.3542051426283406,
+            "Initial Access": 0.49769248141030875
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 24,
+        "Score": 3.8229910714285715,
+        "Marginals": {
+            "Collection": 0.22321428571428575,
+            "Defense Evasion": 0.46874999999999994
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 14,
+        "Score": 3.7524892380164303,
+        "Marginals": {
+            "Defense Evasion": 0.005465562584121663,
+            "Privilege Escalation": 0.7504268463249429
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 30,
+        "Score": 3.694347291639466,
+        "Marginals": {
+            "Defense Evasion": 0.40190346504381735,
+            "Initial Access": 0.19921474975307057,
+            "Collection": 0.3595624629445818
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 15,
+        "Score": 3.5529342328571807,
+        "Marginals": {
+            "Defense Evasion": 0.2492669681698223,
+            "Initial Access": 0.3675557449338556,
+            "Collection": 0.3769879300414642
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 61,
+        "Score": 3.526027397260274,
+        "Marginals": {
+            "Privilege Escalation": 0.13698630136986303,
+            "Collection": 0.684931506849315
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 66,
+        "Score": 3.526027397260274,
+        "Marginals": {
+            "Defense Evasion": 0.684931506849315,
+            "Collection": 0.13698630136986303
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 62,
+        "Score": 3.513529411764706,
+        "Marginals": {
+            "Defense Evasion": 0.4509803921568627,
+            "Privilege Escalation": 0.5490196078431373
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 13,
+        "Score": 3.4159943868937037,
+        "Marginals": {
+            "Initial Access": 0.006065127880737433,
+            "Defense Evasion": 0.7676424215376129,
+            "Privilege Escalation": 0.3556691830273094
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 19,
+        "Score": 3.08171206225681,
+        "Marginals": {
+            "Exfiltration": 0.1945525291828794,
+            "Privilege Escalation": 0.19455252918287935
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 44,
+        "Score": 2.8916973288611185,
+        "Marginals": {
+            "Privilege Escalation": 0.6340727982781565,
+            "Exfiltration": 0.19236553627423505,
+            "Defense Evasion": 0.4131612308401521
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 55,
+        "Score": 2.489644970414201,
+        "Marginals": {
+            "Exfiltration": 0.14792899408284024,
+            "Privilege Escalation": 0.591715976331361
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 2,
+        "Score": 2.235980126017458,
+        "Marginals": {
+            "Privilege Escalation": 0.09171381993192018,
+            "Initial Access": 0.25298100217211245,
+            "Exfiltration": 0.23778975591644638
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 43,
+        "Score": 2.2165893271461714,
+        "Marginals": {
+            "Collection": 0.2610208816705336,
+            "Defense Evasion": 0.33642691415313225
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 40,
+        "Score": 2.156186440677966,
+        "Marginals": {
+            "Defense Evasion": 0.288135593220339,
+            "Privilege Escalation": 0.16101694915254236
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 41,
+        "Score": 2.015610039987234,
+        "Marginals": {
+            "Initial Access": 0.22293352356994015,
+            "Privilege Escalation": 0.572117821540541
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 21,
+        "Score": 2.0074056883935043,
+        "Marginals": {
+            "Initial Access": 0.008364761119879957,
+            "Defense Evasion": 0.4901911061424382
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 63,
+        "Score": 1.883955223880597,
+        "Marginals": {
+            "Collection": 0.42537313432835816,
+            "Exfiltration": 0.3134328358208956
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 12,
+        "Score": 1.8724038601779378,
+        "Marginals": {
+            "Collection": 0.03281637415528222,
+            "Defense Evasion": 0.510112304924887
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 52,
+        "Score": 1.741467696335468,
+        "Marginals": {
+            "Collection": 0.4499755595894011,
+            "Exfiltration": 0.23953508471018808,
+            "Defense Evasion": 0.16959651564834383
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 48,
+        "Score": 1.64245886654479,
+        "Marginals": {
+            "Privilege Escalation": 0.045703839122486295,
+            "Initial Access": 0.5073126142595978
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 37,
+        "Score": 1.5640266777824094,
+        "Marginals": {
+            "Privilege Escalation": 0.020842017507294707,
+            "Exfiltration": 0.5127136306794498
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 4,
+        "Score": 1.5386256034471295,
+        "Marginals": {
+            "Exfiltration": 0.0003324777572380409,
+            "Defense Evasion": 0.5171691513837725
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 50,
+        "Score": 1.3012663755458513,
+        "Marginals": {
+            "Initial Access": 0.0829694323144105,
+            "Defense Evasion": 0.3275109170305676
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 20,
+        "Score": 1.2021365821747165,
+        "Marginals": {
+            "Privilege Escalation": 0.11589717562996155,
+            "Collection": 0.027653809817220876
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 32,
+        "Score": 1.1861769415532426,
+        "Marginals": {
+            "Defense Evasion": 0.005604483586869498,
+            "Privilege Escalation": 0.39191353082465985
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 9,
+        "Score": 1.075756892104656,
+        "Marginals": {
+            "Initial Access": 0.0425971509407424,
+            "Defense Evasion": 0.40506870828615815
+        },
+        "Priority": "High"
+    },
+    {
+        "Index": 28,
+        "Score": 1.015198976443897,
+        "Marginals": {
+            "Privilege Escalation": 0.09598062747934805,
+            "Defense Evasion": 0.2576084917247075
+        },
+        "Priority": "High"
+    },
+    {
         "Index": 82,
         "Score": 1.0,
         "Marginals": {
@@ -69,7 +593,7 @@
         "Marginals": {
             "Initial Access": 0.9
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 99,
@@ -77,7 +601,7 @@
         "Marginals": {
             "Privilege Escalation": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 143,
@@ -85,7 +609,7 @@
         "Marginals": {
             "Defense Evasion": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 248,
@@ -93,7 +617,7 @@
         "Marginals": {
             "Defense Evasion": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 298,
@@ -101,7 +625,7 @@
         "Marginals": {
             "Defense Evasion": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 331,
@@ -109,7 +633,7 @@
         "Marginals": {
             "Initial Access": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 446,
@@ -117,7 +641,7 @@
         "Marginals": {
             "Exfiltration": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 563,
@@ -125,38 +649,16 @@
         "Marginals": {
             "Exfiltration": 0.8
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
-        "Index": 6,
-        "Score": 0.7274331200106469,
+        "Index": 54,
+        "Score": 0.7299152542372881,
         "Marginals": {
-            "Initial Access": 0.9902224536779601,
-            "Defense Evasion": 0.9891979517010111,
-            "Privilege Escalation": 0.9739631231029906,
-            "Collection": 0.9415065890166727,
-            "Exfiltration": 0.8773570787813143
+            "Collection": 0.16101694915254236,
+            "Exfiltration": 0.288135593220339
         },
-        "Priority": "High"
-    },
-    {
-        "Index": 58,
-        "Score": 0.7151803278688524,
-        "Marginals": {
-            "Collection": 0.8415300546448086,
-            "Exfiltration": 0.9508196721311475
-        },
-        "Priority": "High"
-    },
-    {
-        "Index": 39,
-        "Score": 0.7146389680949045,
-        "Marginals": {
-            "Initial Access": 0.899383058110043,
-            "Privilege Escalation": 0.937903995763811,
-            "Exfiltration": 0.8729792147806006
-        },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 89,
@@ -164,7 +666,7 @@
         "Marginals": {
             "Collection": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 154,
@@ -172,7 +674,7 @@
         "Marginals": {
             "Defense Evasion": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 172,
@@ -180,7 +682,7 @@
         "Marginals": {
             "Collection": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 250,
@@ -188,7 +690,7 @@
         "Marginals": {
             "Collection": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 267,
@@ -196,7 +698,7 @@
         "Marginals": {
             "Collection": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 291,
@@ -204,7 +706,7 @@
         "Marginals": {
             "Initial Access": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 316,
@@ -212,7 +714,7 @@
         "Marginals": {
             "Exfiltration": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 353,
@@ -220,7 +722,7 @@
         "Marginals": {
             "Defense Evasion": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 354,
@@ -228,7 +730,7 @@
         "Marginals": {
             "Exfiltration": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 375,
@@ -236,7 +738,7 @@
         "Marginals": {
             "Defense Evasion": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 386,
@@ -244,7 +746,7 @@
         "Marginals": {
             "Defense Evasion": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 400,
@@ -252,7 +754,7 @@
         "Marginals": {
             "Collection": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 408,
@@ -260,7 +762,7 @@
         "Marginals": {
             "Collection": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 471,
@@ -268,7 +770,7 @@
         "Marginals": {
             "Exfiltration": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 475,
@@ -276,7 +778,7 @@
         "Marginals": {
             "Defense Evasion": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 511,
@@ -284,7 +786,7 @@
         "Marginals": {
             "Initial Access": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 513,
@@ -292,50 +794,16 @@
         "Marginals": {
             "Initial Access": 0.7
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
-        "Index": 10,
-        "Score": 0.6995541753113166,
+        "Index": 11,
+        "Score": 0.698012658227848,
         "Marginals": {
-            "Initial Access": 0.9479146856314983,
-            "Defense Evasion": 0.9925585487988646,
-            "Privilege Escalation": 0.9834410291644501,
-            "Collection": 0.820890126166236,
-            "Exfiltration": 0.8870930982073716
+            "Collection": 0.0430379746835443,
+            "Exfiltration": 0.14556962025316458
         },
-        "Priority": "High"
-    },
-    {
-        "Index": 22,
-        "Score": 0.6895745949906359,
-        "Marginals": {
-            "Initial Access": 0.912453270145797,
-            "Privilege Escalation": 0.9584648427381107,
-            "Collection": 0.776130499796631,
-            "Exfiltration": 0.9304216295666184
-        },
-        "Priority": "High"
-    },
-    {
-        "Index": 23,
-        "Score": 0.6895745949906359,
-        "Marginals": {
-            "Initial Access": 0.912453270145797,
-            "Privilege Escalation": 0.9584648427381107,
-            "Collection": 0.776130499796631,
-            "Exfiltration": 0.9304216295666184
-        },
-        "Priority": "High"
-    },
-    {
-        "Index": 57,
-        "Score": 0.6741604477611941,
-        "Marginals": {
-            "Initial Access": 0.8880597014925374,
-            "Privilege Escalation": 0.9253731343283582
-        },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 80,
@@ -343,7 +811,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 87,
@@ -351,7 +819,7 @@
         "Marginals": {
             "Initial Access": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 95,
@@ -359,7 +827,7 @@
         "Marginals": {
             "Privilege Escalation": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 121,
@@ -367,7 +835,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 123,
@@ -375,7 +843,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 126,
@@ -383,7 +851,7 @@
         "Marginals": {
             "Defense Evasion": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 145,
@@ -391,7 +859,7 @@
         "Marginals": {
             "Privilege Escalation": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 164,
@@ -399,7 +867,7 @@
         "Marginals": {
             "Initial Access": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 179,
@@ -407,7 +875,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 186,
@@ -415,7 +883,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 198,
@@ -423,7 +891,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 201,
@@ -431,7 +899,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 220,
@@ -439,7 +907,7 @@
         "Marginals": {
             "Privilege Escalation": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 252,
@@ -447,7 +915,7 @@
         "Marginals": {
             "Initial Access": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 271,
@@ -455,7 +923,7 @@
         "Marginals": {
             "Initial Access": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 277,
@@ -463,7 +931,7 @@
         "Marginals": {
             "Initial Access": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 288,
@@ -471,7 +939,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 324,
@@ -479,7 +947,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 348,
@@ -487,7 +955,7 @@
         "Marginals": {
             "Defense Evasion": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 377,
@@ -495,7 +963,7 @@
         "Marginals": {
             "Defense Evasion": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 385,
@@ -503,7 +971,7 @@
         "Marginals": {
             "Exfiltration": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 398,
@@ -511,7 +979,7 @@
         "Marginals": {
             "Initial Access": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 444,
@@ -519,7 +987,7 @@
         "Marginals": {
             "Privilege Escalation": 0.6
         },
-        "Priority": "High"
+        "Priority": "Med"
     },
     {
         "Index": 469,
@@ -614,6 +1082,15 @@
         "Score": 0.6,
         "Marginals": {
             "Exfiltration": 0.6
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 47,
+        "Score": 0.5757973733583488,
+        "Marginals": {
+            "Privilege Escalation": 0.20637898686679174,
+            "Initial Access": 0.09380863039399621
         },
         "Priority": "Med"
     },
@@ -890,11 +1367,20 @@
         "Priority": "Med"
     },
     {
-        "Index": 64,
-        "Score": 0.43801744186046515,
+        "Index": 7,
+        "Score": 0.492760719042106,
         "Marginals": {
-            "Defense Evasion": 0.5930232558139537,
-            "Initial Access": 0.8837209302325582
+            "Initial Access": 0.007393291444874031,
+            "Defense Evasion": 0.40901860270404294
+        },
+        "Priority": "Med"
+    },
+    {
+        "Index": 17,
+        "Score": 0.4147409544195232,
+        "Marginals": {
+            "Initial Access": 0.0018598905006170163,
+            "Privilege Escalation": 0.40963080448633227
         },
         "Priority": "Med"
     },
@@ -1299,31 +1785,20 @@
         "Priority": "Med"
     },
     {
-        "Index": 59,
-        "Score": 0.3607062780269058,
+        "Index": 56,
+        "Score": 0.38521400778210113,
         "Marginals": {
-            "Defense Evasion": 0.8968609865470852,
-            "Collection": 0.11210762331838565
+            "Exfiltration": 0.19455252918287935,
+            "Privilege Escalation": 0.19455252918287935
         },
         "Priority": "Med"
     },
     {
-        "Index": 35,
-        "Score": 0.3465690376569037,
+        "Index": 31,
+        "Score": 0.334683366743273,
         "Marginals": {
-            "Privilege Escalation": 0.8368200836820083,
-            "Initial Access": 0.23012552301255232
-        },
-        "Priority": "Med"
-    },
-    {
-        "Index": 1,
-        "Score": 0.3085508763055876,
-        "Marginals": {
-            "Privilege Escalation": 0.8839721228017063,
-            "Defense Evasion": 0.5052646467684367,
-            "Collection": 0.0806197103848182,
-            "Exfiltration": 0.9659994589467809
+            "Privilege Escalation": 0.017341132568725208,
+            "Defense Evasion": 0.25135834396776086
         },
         "Priority": "Med"
     },
@@ -1397,7 +1872,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 162,
@@ -1405,7 +1880,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 174,
@@ -1413,7 +1888,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 176,
@@ -1421,7 +1896,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 190,
@@ -1429,7 +1904,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 195,
@@ -1437,7 +1912,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 197,
@@ -1445,7 +1920,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 230,
@@ -1453,7 +1928,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 237,
@@ -1461,7 +1936,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 241,
@@ -1469,7 +1944,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 242,
@@ -1477,7 +1952,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 244,
@@ -1485,7 +1960,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 253,
@@ -1493,7 +1968,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 268,
@@ -1501,7 +1976,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 282,
@@ -1509,7 +1984,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 300,
@@ -1517,7 +1992,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 305,
@@ -1525,7 +2000,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 306,
@@ -1533,7 +2008,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 311,
@@ -1541,7 +2016,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 312,
@@ -1549,7 +2024,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 313,
@@ -1557,7 +2032,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 328,
@@ -1565,7 +2040,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 335,
@@ -1573,7 +2048,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 342,
@@ -1581,7 +2056,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 346,
@@ -1589,7 +2064,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 347,
@@ -1597,7 +2072,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 356,
@@ -1605,7 +2080,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 360,
@@ -1613,7 +2088,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 379,
@@ -1621,7 +2096,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 383,
@@ -1629,7 +2104,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 390,
@@ -1637,7 +2112,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 395,
@@ -1645,7 +2120,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 404,
@@ -1653,7 +2128,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 407,
@@ -1661,7 +2136,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 411,
@@ -1669,7 +2144,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 417,
@@ -1677,7 +2152,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 430,
@@ -1685,7 +2160,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 434,
@@ -1693,7 +2168,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 440,
@@ -1701,7 +2176,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 447,
@@ -1709,7 +2184,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 450,
@@ -1717,7 +2192,7 @@
         "Marginals": {
             "Exfiltration": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 452,
@@ -1725,7 +2200,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 462,
@@ -1733,7 +2208,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 464,
@@ -1741,7 +2216,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 468,
@@ -1749,7 +2224,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 493,
@@ -1757,7 +2232,7 @@
         "Marginals": {
             "Defense Evasion": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 512,
@@ -1765,7 +2240,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 517,
@@ -1773,7 +2248,7 @@
         "Marginals": {
             "Collection": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 520,
@@ -1781,7 +2256,7 @@
         "Marginals": {
             "Initial Access": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 524,
@@ -1789,7 +2264,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 527,
@@ -1797,7 +2272,7 @@
         "Marginals": {
             "Privilege Escalation": 0.3
         },
-        "Priority": "Med"
+        "Priority": "Low"
     },
     {
         "Index": 530,
@@ -1968,56 +2443,29 @@
         "Priority": "Low"
     },
     {
-        "Index": 38,
-        "Score": 0.2867135476463834,
+        "Index": 51,
+        "Score": 0.27193670886075955,
         "Marginals": {
-            "Initial Access": 0.02870264064293915,
-            "Privilege Escalation": 0.9557979334098736
+            "Collection": 0.04303797468354431,
+            "Exfiltration": 0.14556962025316458
         },
         "Priority": "Low"
     },
     {
-        "Index": 49,
-        "Score": 0.2844683544303797,
+        "Index": 33,
+        "Score": 0.2639309984317825,
         "Marginals": {
-            "Collection": 0.7215189873417721,
-            "Exfiltration": 0.34177215189873417
+            "Collection": 0.026136957658128592,
+            "Defense Evasion": 0.21432305279665445
         },
         "Priority": "Low"
     },
     {
-        "Index": 34,
-        "Score": 0.2820153061224489,
+        "Index": 8,
+        "Score": 0.21539534243327638,
         "Marginals": {
-            "Privilege Escalation": 0.7653061224489796,
-            "Collection": 0.12755102040816327
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 45,
-        "Score": 0.24051466519092418,
-        "Marginals": {
-            "Collection": 0.01383508577753182,
-            "Defense Evasion": 0.9075816270060875
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 60,
-        "Score": 0.2221463414634146,
-        "Marginals": {
-            "Collection": 0.5609756097560975,
-            "Exfiltration": 0.5609756097560975
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 65,
-        "Score": 0.21965624999999997,
-        "Marginals": {
-            "Collection": 0.7083333333333334,
-            "Exfiltration": 0.1875
+            "Privilege Escalation": 3.6814052954806335e-05,
+            "Initial Access": 0.2173869826981314
         },
         "Priority": "Low"
     },
@@ -2926,147 +3374,20 @@
         "Priority": "Low"
     },
     {
-        "Index": 61,
-        "Score": 0.1763013698630137,
+        "Index": 42,
+        "Score": 0.18145244956772336,
         "Marginals": {
-            "Privilege Escalation": 0.13698630136986303,
-            "Collection": 0.684931506849315
+            "Collection": 0.019596541786743516,
+            "Exfiltration": 0.1440922190201729
         },
         "Priority": "Low"
     },
     {
-        "Index": 66,
-        "Score": 0.1763013698630137,
+        "Index": 29,
+        "Score": 0.14350563202833627,
         "Marginals": {
-            "Defense Evasion": 0.684931506849315,
-            "Collection": 0.13698630136986303
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 62,
-        "Score": 0.1756764705882353,
-        "Marginals": {
-            "Defense Evasion": 0.4509803921568627,
-            "Privilege Escalation": 0.5490196078431373
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 3,
-        "Score": 0.1555409535828434,
-        "Marginals": {
-            "Defense Evasion": 0.5940736459871478,
-            "Collection": 0.049355339879767,
-            "Initial Access": 0.46511192891777936
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 27,
-        "Score": 0.15407449747743623,
-        "Marginals": {
-            "Defense Evasion": 0.17998641629601722,
-            "Privilege Escalation": 0.4956510070710343,
-            "Exfiltration": 0.767669423723473
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 53,
-        "Score": 0.14937422148081486,
-        "Marginals": {
-            "Privilege Escalation": 0.7433344776290193,
-            "Initial Access": 0.444787168414559,
-            "Defense Evasion": 0.36503200346503684
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 36,
-        "Score": 0.1455344963657907,
-        "Marginals": {
-            "Collection": 0.7977757139269046,
-            "Defense Evasion": 0.16923924387652053,
-            "Exfiltration": 0.2520184399977653
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 46,
-        "Score": 0.13109294360676724,
-        "Marginals": {
-            "Privilege Escalation": 0.3542051426283406,
-            "Initial Access": 0.49769248141030875
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 16,
-        "Score": 0.12580743283640938,
-        "Marginals": {
-            "Initial Access": 0.024992850103403498,
-            "Defense Evasion": 0.6769117441271142,
-            "Privilege Escalation": 0.8296451132416877
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 55,
-        "Score": 0.12448224852071006,
-        "Marginals": {
-            "Exfiltration": 0.14792899408284024,
-            "Privilege Escalation": 0.591715976331361
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 26,
-        "Score": 0.11891230530713179,
-        "Marginals": {
-            "Defense Evasion": 0.6178152677143065,
-            "Collection": 0.19889895403271984,
-            "Initial Access": 0.28093176013407556
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 18,
-        "Score": 0.11589747432431025,
-        "Marginals": {
-            "Privilege Escalation": 0.22609170546252985,
-            "Exfiltration": 0.49293880576470694,
-            "Initial Access": 0.5849415069250486
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 0,
-        "Score": 0.11351497584462066,
-        "Marginals": {
-            "Initial Access": 0.006370971542435852,
-            "Privilege Escalation": 0.6175198392577376,
-            "Exfiltration": 0.9364866634411261,
-            "Collection": 0.07050010339624269
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 25,
-        "Score": 0.10940178525280389,
-        "Marginals": {
-            "Defense Evasion": 0.13718898292803805,
-            "Privilege Escalation": 0.7025557451083516,
-            "Collection": 0.3587394943745291
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 5,
-        "Score": 0.10501498165678985,
-        "Marginals": {
-            "Privilege Escalation": 0.030808491630876154,
-            "Defense Evasion": 0.6695167705440123
+            "Exfiltration": 0.036238795966751586,
+            "Collection": 0.036238795966751586
         },
         "Priority": "Low"
     },
@@ -4851,327 +5172,6 @@
         "Score": 0.1,
         "Marginals": {
             "Privilege Escalation": 0.1
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 44,
-        "Score": 0.09638991096203728,
-        "Marginals": {
-            "Privilege Escalation": 0.6340727982781565,
-            "Exfiltration": 0.19236553627423505,
-            "Defense Evasion": 0.4131612308401521
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 24,
-        "Score": 0.09557477678571429,
-        "Marginals": {
-            "Collection": 0.22321428571428575,
-            "Defense Evasion": 0.46874999999999994
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 63,
-        "Score": 0.09419776119402985,
-        "Marginals": {
-            "Collection": 0.42537313432835816,
-            "Exfiltration": 0.3134328358208956
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 30,
-        "Score": 0.09235868229098665,
-        "Marginals": {
-            "Defense Evasion": 0.40190346504381735,
-            "Initial Access": 0.19921474975307057,
-            "Collection": 0.3595624629445818
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 14,
-        "Score": 0.0750497847603286,
-        "Marginals": {
-            "Defense Evasion": 0.005465562584121663,
-            "Privilege Escalation": 0.7504268463249429
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 43,
-        "Score": 0.07388631090487238,
-        "Marginals": {
-            "Collection": 0.2610208816705336,
-            "Defense Evasion": 0.33642691415313225
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 40,
-        "Score": 0.0718728813559322,
-        "Marginals": {
-            "Defense Evasion": 0.288135593220339,
-            "Privilege Escalation": 0.16101694915254236
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 15,
-        "Score": 0.07105868465714361,
-        "Marginals": {
-            "Defense Evasion": 0.2492669681698223,
-            "Initial Access": 0.3675557449338556,
-            "Collection": 0.3769879300414642
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 13,
-        "Score": 0.06831988773787408,
-        "Marginals": {
-            "Initial Access": 0.006065127880737433,
-            "Defense Evasion": 0.7676424215376129,
-            "Privilege Escalation": 0.3556691830273094
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 41,
-        "Score": 0.06718700133290781,
-        "Marginals": {
-            "Initial Access": 0.22293352356994015,
-            "Privilege Escalation": 0.572117821540541
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 19,
-        "Score": 0.061634241245136195,
-        "Marginals": {
-            "Exfiltration": 0.1945525291828794,
-            "Privilege Escalation": 0.19455252918287935
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 52,
-        "Score": 0.05804892321118227,
-        "Marginals": {
-            "Collection": 0.4499755595894011,
-            "Exfiltration": 0.23953508471018808,
-            "Defense Evasion": 0.16959651564834383
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 48,
-        "Score": 0.05474862888482633,
-        "Marginals": {
-            "Privilege Escalation": 0.045703839122486295,
-            "Initial Access": 0.5073126142595978
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 37,
-        "Score": 0.052134222592746984,
-        "Marginals": {
-            "Privilege Escalation": 0.020842017507294707,
-            "Exfiltration": 0.5127136306794498
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 50,
-        "Score": 0.04337554585152838,
-        "Marginals": {
-            "Initial Access": 0.0829694323144105,
-            "Defense Evasion": 0.3275109170305676
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 21,
-        "Score": 0.040148113767870086,
-        "Marginals": {
-            "Initial Access": 0.008364761119879957,
-            "Defense Evasion": 0.4901911061424382
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 12,
-        "Score": 0.037448077203558756,
-        "Marginals": {
-            "Collection": 0.03281637415528222,
-            "Defense Evasion": 0.510112304924887
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 54,
-        "Score": 0.0364957627118644,
-        "Marginals": {
-            "Collection": 0.16101694915254236,
-            "Exfiltration": 0.288135593220339
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 2,
-        "Score": 0.031942573228820825,
-        "Marginals": {
-            "Privilege Escalation": 0.09171381993192018,
-            "Initial Access": 0.25298100217211245,
-            "Exfiltration": 0.23778975591644638
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 32,
-        "Score": 0.029654423538831066,
-        "Marginals": {
-            "Defense Evasion": 0.005604483586869498,
-            "Privilege Escalation": 0.39191353082465985
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 4,
-        "Score": 0.02564376005745216,
-        "Marginals": {
-            "Exfiltration": 0.0003324777572380409,
-            "Defense Evasion": 0.5171691513837725
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 28,
-        "Score": 0.025379974411097423,
-        "Marginals": {
-            "Privilege Escalation": 0.09598062747934805,
-            "Defense Evasion": 0.2576084917247075
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 20,
-        "Score": 0.024042731643494332,
-        "Marginals": {
-            "Privilege Escalation": 0.11589717562996155,
-            "Collection": 0.027653809817220876
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 56,
-        "Score": 0.019260700389105056,
-        "Marginals": {
-            "Exfiltration": 0.19455252918287935,
-            "Privilege Escalation": 0.19455252918287935
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 47,
-        "Score": 0.019193245778611628,
-        "Marginals": {
-            "Privilege Escalation": 0.20637898686679174,
-            "Initial Access": 0.09380863039399621
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 9,
-        "Score": 0.017929281535077602,
-        "Marginals": {
-            "Initial Access": 0.0425971509407424,
-            "Defense Evasion": 0.40506870828615815
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 11,
-        "Score": 0.013960253164556959,
-        "Marginals": {
-            "Collection": 0.0430379746835443,
-            "Exfiltration": 0.14556962025316458
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 51,
-        "Score": 0.009064556962025318,
-        "Marginals": {
-            "Collection": 0.04303797468354431,
-            "Exfiltration": 0.14556962025316458
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 33,
-        "Score": 0.008797699947726084,
-        "Marginals": {
-            "Collection": 0.026136957658128592,
-            "Defense Evasion": 0.21432305279665445
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 31,
-        "Score": 0.008367084168581824,
-        "Marginals": {
-            "Privilege Escalation": 0.017341132568725208,
-            "Defense Evasion": 0.25135834396776086
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 17,
-        "Score": 0.008294819088390464,
-        "Marginals": {
-            "Initial Access": 0.0018598905006170163,
-            "Privilege Escalation": 0.40963080448633227
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 7,
-        "Score": 0.008212678650701766,
-        "Marginals": {
-            "Initial Access": 0.007393291444874031,
-            "Defense Evasion": 0.40901860270404294
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 42,
-        "Score": 0.0060484149855907785,
-        "Marginals": {
-            "Collection": 0.019596541786743516,
-            "Exfiltration": 0.1440922190201729
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 8,
-        "Score": 0.0035899223738879394,
-        "Marginals": {
-            "Privilege Escalation": 3.6814052954806335e-05,
-            "Initial Access": 0.2173869826981314
-        },
-        "Priority": "Low"
-    },
-    {
-        "Index": 29,
-        "Score": 0.0035876408007084067,
-        "Marginals": {
-            "Exfiltration": 0.036238795966751586,
-            "Collection": 0.036238795966751586
         },
         "Priority": "Low"
     }

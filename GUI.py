@@ -4,6 +4,7 @@ from config import GUI_WINDOW_DIMENSIONS, IMAGES_DIRECTORY
 import user_feedback
 import subprocess
 import main
+import attack_scoring
 
 class App(tk.Tk):
     def __init__(self):
@@ -79,9 +80,8 @@ class App(tk.Tk):
         self.host_info_container.grid(row=1,column=0)
 
 
-
         # Populate dropdown
-        self.all_event_subgraphs = sorted(main.all_event_subgraphs, key=lambda sg: sg["Score"], reverse=True)
+        self.all_event_subgraphs = main.ev_data_tracker.sort_by_score(return_copy=True)
         #self.subgraph_dropdown["values"] = ["Event "+str(sg["Index"])+" | Score: "+str(sg["Score"]) for sg in self.all_event_subgraphs]
         self.subgraph_dropdown["values"] = [sg["Index"] for sg in self.all_event_subgraphs if sg["Index"] < main.GRAPH_DISPLAY_CUTOFF]
         self.subgraph_dropdown.bind("<<ComboboxSelected>>", self.on_dropdown_select)
@@ -141,6 +141,7 @@ class App(tk.Tk):
             self.subgraph_info_box.delete("1.0", tk.END)
             self.subgraph_info_box.insert(tk.END, f"Alert index: \t\t{selected_index}")
             score = selected_subgraph["Priority"]
+            print(score)
             self.subgraph_info_box.insert(tk.END, f"\tPriority: \t{score}")
             subgraph = selected_subgraph["Subgraph"]
             self.subgraph_info_box.insert(tk.END, "\n\n"+"="*20+ " ALERTS " + "="*20+"\n")
